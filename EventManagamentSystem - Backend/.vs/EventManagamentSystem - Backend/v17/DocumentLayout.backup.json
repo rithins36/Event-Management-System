@@ -3,10 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2DC7F73F-D48F-423E-B6F2-3329D16C69FC}|..\\..\\.Net-Core-Training\\17-10\\MicroServicesApplication\\AuthAPI\\AuthAPI.csproj|c:\\users\\administrator\\documents\\.net-core-training\\17-10\\microservicesapplication\\authapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DC7F73F-D48F-423E-B6F2-3329D16C69FC}|..\\..\\.Net-Core-Training\\17-10\\MicroServicesApplication\\AuthAPI\\AuthAPI.csproj|c:\\users\\administrator\\documents\\.net-core-training\\17-10\\microservicesapplication\\authapi\\controllers\\authapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34A403DB-FC1B-46BE-B50A-D6CC9B4CA23F}|PlannerAPI\\PlannerAPI.csproj|c:\\users\\administrator\\documents\\event-management-system\\eventmanagamentsystem - backend\\plannerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34A403DB-FC1B-46BE-B50A-D6CC9B4CA23F}|PlannerAPI\\PlannerAPI.csproj|solutionrelative:plannerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,27 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\.Net-Core-Training\\17-10\\MicroServicesApplication\\AuthAPI\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "..\\..\\.Net-Core-Training\\17-10\\MicroServicesApplication\\AuthAPI\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\.Net-Core-Training\\17-10\\MicroServicesApplication\\AuthAPI\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "..\\..\\.Net-Core-Training\\17-10\\MicroServicesApplication\\AuthAPI\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\PlannerAPI\\Program.cs",
+              "RelativeDocumentMoniker": "PlannerAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\PlannerAPI\\Program.cs",
+              "RelativeToolTip": "PlannerAPI\\Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAwAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T04:58:05.383Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthAPIController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\.Net-Core-Training\\17-10\\MicroServicesApplication\\AuthAPI\\Controllers\\AuthAPIController.cs",
-              "RelativeDocumentMoniker": "..\\..\\.Net-Core-Training\\17-10\\MicroServicesApplication\\AuthAPI\\Controllers\\AuthAPIController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\.Net-Core-Training\\17-10\\MicroServicesApplication\\AuthAPI\\Controllers\\AuthAPIController.cs",
-              "RelativeToolTip": "..\\..\\.Net-Core-Training\\17-10\\MicroServicesApplication\\AuthAPI\\Controllers\\AuthAPIController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T04:57:52.22Z",
+              "WhenOpened": "2024-11-08T09:00:17.66Z",
               "EditorCaption": ""
             }
           ]
