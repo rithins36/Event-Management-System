@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "rN8eaciSwnZvCbKrVTonQypztXzzJtllSvUN9sm+z2k=",
+  "Source": "EventCreationService",
+  "BasePath": "_content/EventCreationService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

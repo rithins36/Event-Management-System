@@ -1,0 +1,6 @@
+@EventCreationService_HostAddress = http://localhost:5068
+
+GET {{EventCreationService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
