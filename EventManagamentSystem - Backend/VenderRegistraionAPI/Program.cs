@@ -1,3 +1,6 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using VenderRegistraionAPI.Data;
 
 namespace VenderRegistraionAPI
 {
@@ -6,6 +9,8 @@ namespace VenderRegistraionAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddDbContext<VendorContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("VendorDatabase")));
 
             // Add services to the container.
 
