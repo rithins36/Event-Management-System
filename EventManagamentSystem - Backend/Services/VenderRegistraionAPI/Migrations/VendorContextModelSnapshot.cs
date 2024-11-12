@@ -36,6 +36,10 @@ namespace VenderRegistraionAPI.Migrations
                     b.Property<decimal>("Cost")
                         .HasColumnType("decimal(10,2)");
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

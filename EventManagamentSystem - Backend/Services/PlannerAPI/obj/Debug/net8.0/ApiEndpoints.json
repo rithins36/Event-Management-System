@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "PlannerAPI.Controllers.EmailController",
+    "Method": "SendEmail",
+    "RelativePath": "api/Email/send",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailRequest",
+        "Type": "PlannerAPI.Controllers.EmailController\u002BEmailRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "PlannerAPI.Controllers.PlannerController",
     "Method": "Get",
     "RelativePath": "api/Planner",

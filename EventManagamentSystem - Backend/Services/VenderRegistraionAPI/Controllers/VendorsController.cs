@@ -50,5 +50,56 @@ namespace VendorRegistrationAPI.Controllers
 
             return CreatedAtAction(nameof(GetVendor), new { id = vendor.VendorID }, vendor);
         }
+
+        // PUT: api/Vendors/5
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutVendor(int id, Vendor vendor)
+        {
+            if (id != vendor.VendorID)
+            {
+                return BadRequest();
+            }
+
+            _context.Entry(vendor).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!VendorExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
+        }
+
+        // DELETE: api/Vendors/5
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteVendor(int id)
+        {
+            var vendor = await _context.Vendors.FindAsync(id);
+            if (vendor == null)
+            {
+                return NotFound();
+            }
+
+            _context.Vendors.Remove(vendor);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        private bool VendorExists(int id)
+        {
+            return _context.Vendors.Any(e => e.VendorID == id);
+        }
     }
 }

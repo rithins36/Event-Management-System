@@ -19,6 +19,17 @@ namespace VenderRegistraionAPI
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            // Configure CORS
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpecificOrigin", builder =>
+                {
+                    builder.WithOrigins("http://localhost:4200") // Allow requests from Angular app
+                           .AllowAnyMethod()
+                           .AllowAnyHeader();
+                });
+            });
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -29,6 +40,9 @@ namespace VenderRegistraionAPI
             }
 
             app.UseHttpsRedirection();
+
+            // Enable CORS
+            app.UseCors("AllowSpecificOrigin");
 
             app.UseAuthorization();
 

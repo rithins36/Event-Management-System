@@ -72,6 +72,43 @@
     ]
   },
   {
+    "ContainingType": "VendorRegistrationAPI.Controllers.VendorsController",
+    "Method": "PutVendor",
+    "RelativePath": "api/Vendors/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "vendor",
+        "Type": "VenderRegistraionAPI.Models.Vendor",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VendorRegistrationAPI.Controllers.VendorsController",
+    "Method": "DeleteVendor",
+    "RelativePath": "api/Vendors/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "VenderRegistraionAPI.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

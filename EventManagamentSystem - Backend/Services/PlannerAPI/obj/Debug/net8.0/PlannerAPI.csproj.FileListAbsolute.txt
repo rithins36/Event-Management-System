@@ -31,3 +31,5 @@ C:\Users\Administrator\Documents\Event-Management-System\EventManagamentSystem -
 C:\Users\Administrator\Documents\Event-Management-System\EventManagamentSystem - Backend\Services\PlannerAPI\obj\Debug\net8.0\PlannerAPI.pdb
 C:\Users\Administrator\Documents\Event-Management-System\EventManagamentSystem - Backend\Services\PlannerAPI\obj\Debug\net8.0\PlannerAPI.genruntimeconfig.cache
 C:\Users\Administrator\Documents\Event-Management-System\EventManagamentSystem - Backend\Services\PlannerAPI\obj\Debug\net8.0\ref\PlannerAPI.dll
+C:\Users\Administrator\Documents\Event-Management-System\EventManagamentSystem - Backend\Services\PlannerAPI\bin\Debug\net8.0\Mailjet.Client.dll
+C:\Users\Administrator\Documents\Event-Management-System\EventManagamentSystem - Backend\Services\PlannerAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
