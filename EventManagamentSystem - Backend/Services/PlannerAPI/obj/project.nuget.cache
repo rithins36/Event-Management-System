@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VLP5UEpnHyI=",
+  "dgSpecHash": "mjre7OD5OjE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\PlannerAPI\\PlannerAPI.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\PlannerAPI\\PlannerAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\mailjet.api\\3.0.0\\mailjet.api.3.0.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
