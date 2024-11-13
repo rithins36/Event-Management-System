@@ -56,15 +56,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "EventCreationService",
+              "Title": "EventCreationService.csproj",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\EventCreationService\\EventCreationService.csproj",
               "RelativeDocumentMoniker": "Services\\EventCreationService\\EventCreationService\\EventCreationService.csproj",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\EventCreationService\\EventCreationService.csproj",
               "RelativeToolTip": "Services\\EventCreationService\\EventCreationService\\EventCreationService.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-13T13:17:49.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T13:17:49.191Z"
             },
             {
               "$type": "Document",
@@ -100,8 +99,7 @@
               "RelativeToolTip": "Services\\PlannerAPI\\Services\\MailjetService.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T05:16:47.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T05:16:47.608Z"
             },
             {
               "$type": "Document",

@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\source\\repos\\EventCreationService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D575914B-A27C-4786-8E6A-D80D4FAB021E}|EventCreationService\\EventCreationService.csproj|c:\\users\\administrator\\source\\repos\\eventcreationservice\\eventcreationservice\\controllers\\plannercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D575914B-A27C-4786-8E6A-D80D4FAB021E}|EventCreationService\\EventCreationService.csproj|solutionrelative:eventcreationservice\\controllers\\plannercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D575914B-A27C-4786-8E6A-D80D4FAB021E}|EventCreationService\\EventCreationService.csproj|c:\\users\\administrator\\source\\repos\\eventcreationservice\\eventcreationservice\\services\\plannerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D575914B-A27C-4786-8E6A-D80D4FAB021E}|EventCreationService\\EventCreationService.csproj|solutionrelative:eventcreationservice\\services\\plannerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D575914B-A27C-4786-8E6A-D80D4FAB021E}|EventCreationService\\EventCreationService.csproj|c:\\users\\administrator\\source\\repos\\eventcreationservice\\eventcreationservice\\services\\iplannerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D575914B-A27C-4786-8E6A-D80D4FAB021E}|EventCreationService\\EventCreationService.csproj|solutionrelative:eventcreationservice\\services\\iplannerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IPlannerService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\EventCreationService\\EventCreationService\\services\\IPlannerService.cs",
+              "RelativeDocumentMoniker": "EventCreationService\\services\\IPlannerService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\EventCreationService\\EventCreationService\\services\\IPlannerService.cs",
+              "RelativeToolTip": "EventCreationService\\services\\IPlannerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T12:08:03.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlannerController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\EventCreationService\\EventCreationService\\Controllers\\PlannerController.cs",
+              "RelativeDocumentMoniker": "EventCreationService\\Controllers\\PlannerController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\EventCreationService\\EventCreationService\\Controllers\\PlannerController.cs",
+              "RelativeToolTip": "EventCreationService\\Controllers\\PlannerController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T10:10:35.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlannerService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\EventCreationService\\EventCreationService\\services\\PlannerService.cs",
+              "RelativeDocumentMoniker": "EventCreationService\\services\\PlannerService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\EventCreationService\\EventCreationService\\services\\PlannerService.cs",
+              "RelativeToolTip": "EventCreationService\\services\\PlannerService.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAADwvzcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T09:54:58.339Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
