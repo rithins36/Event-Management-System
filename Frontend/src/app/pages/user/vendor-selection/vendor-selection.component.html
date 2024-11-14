@@ -1,0 +1,31 @@
+
+<div class="form-body">
+  <div class="row">
+      <div class="form-holder">
+          <div class="form-content">
+
+            <div class="form-items">
+              <h2>Select Venue</h2>
+              <div *ngFor="let venue of venues">
+                <input 
+                  type="radio" 
+                  name="venueSelection" 
+                  [(ngModel)]="selectedVenue" 
+                  [value]="venue"
+                > 
+                {{venue.VenueName}} - ${{venue.Rent}}
+              </div>
+            </div>
+
+              <div class="form-items">
+                <h2>Select Vendors</h2>
+                <div *ngFor="let vendor of vendors">
+                  <input type="checkbox" [(ngModel)]="vendor.selected"> {{vendor.name}} - ${{vendor.cost}}
+                </div>
+              </div>
+              <button (click)="next()">Next</button>
+
+          </div>
+      </div>
+  </div>
+</div>

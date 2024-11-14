@@ -1,0 +1,17 @@
+<div>
+  <h2>Event Summary</h2>
+  <p>Name: {{ eventDetails.name }}</p>
+  <p>Date: {{ eventDetails.date }}</p>
+  <p>Type: {{ eventDetails.type }}</p>
+
+  <h3>Venue</h3>
+  <p>{{ selectedVenue.VenueName }} - ${{ selectedVenue.Rent }}</p>
+
+  <h3>Selected Vendors</h3>
+  <ul>
+    <li *ngFor="let vendor of selectedVendors">{{vendor.name}} - ${{vendor.cost}}</li>
+  </ul>
+
+  <h3>Total Budget: ${{ totalCost }}</h3>
+  <button (click)="makePayment()">Proceed to Payment</button>
+</div>
