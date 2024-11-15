@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PlannerAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca65d25b180db5473608728dda96aa9b9334ac51")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1281ae633465829d23d3da1357ee33170d6c76e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("PlannerAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PlannerAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

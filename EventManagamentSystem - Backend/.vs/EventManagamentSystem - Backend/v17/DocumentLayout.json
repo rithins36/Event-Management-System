@@ -1,26 +1,73 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E96A2341-910C-4C6C-A414-466E8BCB7E55}|Services\\VenderRegistraionAPI\\VenderRegistraionAPI.csproj|c:\\users\\administrator\\documents\\event-management-system\\eventmanagamentsystem - backend\\services\\venderregistraionapi\\models\\vendor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E96A2341-910C-4C6C-A414-466E8BCB7E55}|Services\\VenderRegistraionAPI\\VenderRegistraionAPI.csproj|solutionrelative:services\\venderregistraionapi\\models\\vendor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E96A2341-910C-4C6C-A414-466E8BCB7E55}|Services\\VenderRegistraionAPI\\VenderRegistraionAPI.csproj|c:\\users\\administrator\\desktop\\event-management-system\\eventmanagamentsystem - backend\\services\\venderregistraionapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E96A2341-910C-4C6C-A414-466E8BCB7E55}|Services\\VenderRegistraionAPI\\VenderRegistraionAPI.csproj|solutionrelative:services\\venderregistraionapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{658F319F-756F-4172-BCC2-98B439338BCC}|Services\\PlannerAPI\\PlannerAPI.csproj|c:\\users\\administrator\\documents\\event-management-system\\eventmanagamentsystem - backend\\services\\plannerapi\\services\\mailjetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{658F319F-756F-4172-BCC2-98B439338BCC}|Services\\PlannerAPI\\PlannerAPI.csproj|solutionrelative:services\\plannerapi\\services\\mailjetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\VenderRegistraionAPI\\Migrations\\20241115043850_kl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Services\\VenderRegistraionAPI\\Migrations\\20241115043850_kl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{658F319F-756F-4172-BCC2-98B439338BCC}|Services\\PlannerAPI\\PlannerAPI.csproj|c:\\users\\administrator\\documents\\event-management-system\\eventmanagamentsystem - backend\\services\\plannerapi\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{658F319F-756F-4172-BCC2-98B439338BCC}|Services\\PlannerAPI\\PlannerAPI.csproj|solutionrelative:services\\plannerapi\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Eventdb/True/SqlTable/dbo.Planners.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E96A2341-910C-4C6C-A414-466E8BCB7E55}|Services\\VenderRegistraionAPI\\VenderRegistraionAPI.csproj|c:\\users\\administrator\\documents\\event-management-system\\eventmanagamentsystem - backend\\services\\venderregistraionapi\\controllers\\vendorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{82EAEA03-1E5A-42C4-9F2B-4BECAC6E6442}|Services\\EventCreationService\\EventCreationService.csproj|c:\\users\\administrator\\desktop\\event-management-system\\eventmanagamentsystem - backend\\services\\eventcreationservice\\controllers\\plannercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82EAEA03-1E5A-42C4-9F2B-4BECAC6E6442}|Services\\EventCreationService\\EventCreationService.csproj|solutionrelative:services\\eventcreationservice\\controllers\\plannercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\Migrations\\20241115042203_f.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Services\\EventCreationService\\Migrations\\20241115042203_f.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\Migrations\\20241115042058_df.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Services\\EventCreationService\\Migrations\\20241115042058_df.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82EAEA03-1E5A-42C4-9F2B-4BECAC6E6442}|Services\\EventCreationService\\EventCreationService.csproj|c:\\users\\administrator\\desktop\\event-management-system\\eventmanagamentsystem - backend\\services\\eventcreationservice\\models\\plannerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82EAEA03-1E5A-42C4-9F2B-4BECAC6E6442}|Services\\EventCreationService\\EventCreationService.csproj|solutionrelative:services\\eventcreationservice\\models\\plannerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82EAEA03-1E5A-42C4-9F2B-4BECAC6E6442}|Services\\EventCreationService\\EventCreationService.csproj|c:\\users\\administrator\\desktop\\event-management-system\\eventmanagamentsystem - backend\\services\\eventcreationservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{82EAEA03-1E5A-42C4-9F2B-4BECAC6E6442}|Services\\EventCreationService\\EventCreationService.csproj|solutionrelative:services\\eventcreationservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/VendorDB/True/SqlTable/dbo.Vendors.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/microservices_Auth/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/microservices_Auth/True/SqlTable/dbo.AspNetRoles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AuthDB/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82EAEA03-1E5A-42C4-9F2B-4BECAC6E6442}|Services\\EventCreationService\\EventCreationService.csproj|c:\\users\\administrator\\desktop\\event-management-system\\eventmanagamentsystem - backend\\services\\eventcreationservice\\eventcreationservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{82EAEA03-1E5A-42C4-9F2B-4BECAC6E6442}|Services\\EventCreationService\\EventCreationService.csproj|solutionrelative:services\\eventcreationservice\\eventcreationservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E96A2341-910C-4C6C-A414-466E8BCB7E55}|Services\\VenderRegistraionAPI\\VenderRegistraionAPI.csproj|c:\\users\\administrator\\desktop\\event-management-system\\eventmanagamentsystem - backend\\services\\venderregistraionapi\\controllers\\vendorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E96A2341-910C-4C6C-A414-466E8BCB7E55}|Services\\VenderRegistraionAPI\\VenderRegistraionAPI.csproj|solutionrelative:services\\venderregistraionapi\\controllers\\vendorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{658F319F-756F-4172-BCC2-98B439338BCC}|Services\\PlannerAPI\\PlannerAPI.csproj|c:\\users\\administrator\\documents\\event-management-system\\eventmanagamentsystem - backend\\services\\plannerapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{658F319F-756F-4172-BCC2-98B439338BCC}|Services\\PlannerAPI\\PlannerAPI.csproj|c:\\users\\administrator\\desktop\\event-management-system\\eventmanagamentsystem - backend\\services\\plannerapi\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{658F319F-756F-4172-BCC2-98B439338BCC}|Services\\PlannerAPI\\PlannerAPI.csproj|solutionrelative:services\\plannerapi\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{658F319F-756F-4172-BCC2-98B439338BCC}|Services\\PlannerAPI\\PlannerAPI.csproj|c:\\users\\administrator\\desktop\\event-management-system\\eventmanagamentsystem - backend\\services\\plannerapi\\services\\mailjetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{658F319F-756F-4172-BCC2-98B439338BCC}|Services\\PlannerAPI\\PlannerAPI.csproj|solutionrelative:services\\plannerapi\\services\\mailjetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{658F319F-756F-4172-BCC2-98B439338BCC}|Services\\PlannerAPI\\PlannerAPI.csproj|c:\\users\\administrator\\desktop\\event-management-system\\eventmanagamentsystem - backend\\services\\plannerapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{658F319F-756F-4172-BCC2-98B439338BCC}|Services\\PlannerAPI\\PlannerAPI.csproj|solutionrelative:services\\plannerapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E96A2341-910C-4C6C-A414-466E8BCB7E55}|Services\\VenderRegistraionAPI\\VenderRegistraionAPI.csproj|c:\\users\\administrator\\desktop\\event-management-system\\eventmanagamentsystem - backend\\services\\venderregistraionapi\\migrations\\20241114042814_jk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E96A2341-910C-4C6C-A414-466E8BCB7E55}|Services\\VenderRegistraionAPI\\VenderRegistraionAPI.csproj|solutionrelative:services\\venderregistraionapi\\migrations\\20241114042814_jk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,52 +77,201 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Vendor.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\VenderRegistraionAPI\\Models\\Vendor.cs",
-              "RelativeDocumentMoniker": "Services\\VenderRegistraionAPI\\Models\\Vendor.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\VenderRegistraionAPI\\Models\\Vendor.cs",
-              "RelativeToolTip": "Services\\VenderRegistraionAPI\\Models\\Vendor.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAiwAwAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "PlannerDto.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\models\\PlannerDto.cs",
+              "RelativeDocumentMoniker": "Services\\EventCreationService\\models\\PlannerDto.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\models\\PlannerDto.cs",
+              "RelativeToolTip": "Services\\EventCreationService\\models\\PlannerDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T11:22:06.845Z",
+              "WhenOpened": "2024-11-15T04:08:01.381Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\VenderRegistraionAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Services\\VenderRegistraionAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\VenderRegistraionAPI\\Program.cs",
+              "RelativeToolTip": "Services\\VenderRegistraionAPI\\Program.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAowBoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T04:42:19.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20241115043850_kl.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\VenderRegistraionAPI\\Migrations\\20241115043850_kl.cs",
+              "RelativeDocumentMoniker": "Services\\VenderRegistraionAPI\\Migrations\\20241115043850_kl.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\VenderRegistraionAPI\\Migrations\\20241115043850_kl.cs",
+              "RelativeToolTip": "Services\\VenderRegistraionAPI\\Migrations\\20241115043850_kl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T04:38:51.188Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "dbo.Planners [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Eventdb/True/SqlTable/dbo.Planners.sql",
+              "ToolTip": "dbo.Planners [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-11-15T04:22:32.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20241115042203_f.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\Migrations\\20241115042203_f.cs",
+              "RelativeDocumentMoniker": "Services\\EventCreationService\\Migrations\\20241115042203_f.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\Migrations\\20241115042203_f.cs",
+              "RelativeToolTip": "Services\\EventCreationService\\Migrations\\20241115042203_f.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T04:22:03.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20241115042058_df.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\Migrations\\20241115042058_df.cs",
+              "RelativeDocumentMoniker": "Services\\EventCreationService\\Migrations\\20241115042058_df.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\Migrations\\20241115042058_df.cs",
+              "RelativeToolTip": "Services\\EventCreationService\\Migrations\\20241115042058_df.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T04:20:58.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\appsettings.json",
+              "RelativeDocumentMoniker": "Services\\EventCreationService\\appsettings.json",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\appsettings.json",
+              "RelativeToolTip": "Services\\EventCreationService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-15T03:43:14.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "dbo.Vendors.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/VendorDB/True/SqlTable/dbo.Vendors.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/VendorDB/True/SqlTable/dbo.Vendors.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-11-14T07:11:36.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlannerController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\Controllers\\PlannerController.cs",
+              "RelativeDocumentMoniker": "Services\\EventCreationService\\Controllers\\PlannerController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\Controllers\\PlannerController.cs",
+              "RelativeToolTip": "Services\\EventCreationService\\Controllers\\PlannerController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAkwC0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T05:37:46.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "dbo.AspNetUsers.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/microservices_Auth/True/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/microservices_Auth/True/SqlTable/dbo.AspNetUsers.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-11-14T05:43:40.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "dbo.AspNetUsers.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AuthDB/True/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/AuthDB/True/SqlTable/dbo.AspNetUsers.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-11-14T05:42:17.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "dbo.AspNetRoles.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/microservices_Auth/True/SqlTable/dbo.AspNetRoles.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/microservices_Auth/True/SqlTable/dbo.AspNetRoles.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-11-14T06:18:04.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EventCreationService.csproj",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\EventCreationService.csproj",
+              "RelativeDocumentMoniker": "Services\\EventCreationService\\EventCreationService.csproj",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\EventCreationService.csproj",
+              "RelativeToolTip": "Services\\EventCreationService\\EventCreationService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-14T05:37:38.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20241114042814_jk.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\VenderRegistraionAPI\\Migrations\\20241114042814_jk.cs",
+              "RelativeDocumentMoniker": "Services\\VenderRegistraionAPI\\Migrations\\20241114042814_jk.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\VenderRegistraionAPI\\Migrations\\20241114042814_jk.cs",
+              "RelativeToolTip": "Services\\VenderRegistraionAPI\\Migrations\\20241114042814_jk.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T04:28:14.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "EmailController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\PlannerAPI\\Controllers\\EmailController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\PlannerAPI\\Controllers\\EmailController.cs",
               "RelativeDocumentMoniker": "Services\\PlannerAPI\\Controllers\\EmailController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\PlannerAPI\\Controllers\\EmailController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\PlannerAPI\\Controllers\\EmailController.cs",
               "RelativeToolTip": "Services\\PlannerAPI\\Controllers\\EmailController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAowBYAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T06:11:38.843Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 15,
               "Title": "MailjetService.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\PlannerAPI\\Services\\MailjetService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\PlannerAPI\\Services\\MailjetService.cs",
               "RelativeDocumentMoniker": "Services\\PlannerAPI\\Services\\MailjetService.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\PlannerAPI\\Services\\MailjetService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\PlannerAPI\\Services\\MailjetService.cs",
               "RelativeToolTip": "Services\\PlannerAPI\\Services\\MailjetService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-12T05:16:47.608Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 16,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\PlannerAPI\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\PlannerAPI\\appsettings.json",
               "RelativeDocumentMoniker": "Services\\PlannerAPI\\appsettings.json",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\PlannerAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\PlannerAPI\\appsettings.json",
               "RelativeToolTip": "Services\\PlannerAPI\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -83,13 +279,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "VendorsController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\VenderRegistraionAPI\\Controllers\\VendorsController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\VenderRegistraionAPI\\Controllers\\VendorsController.cs",
               "RelativeDocumentMoniker": "Services\\VenderRegistraionAPI\\Controllers\\VendorsController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\VenderRegistraionAPI\\Controllers\\VendorsController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\VenderRegistraionAPI\\Controllers\\VendorsController.cs",
               "RelativeToolTip": "Services\\VenderRegistraionAPI\\Controllers\\VendorsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-11T04:58:17.437Z"
             }
