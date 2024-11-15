@@ -21,7 +21,7 @@ namespace EventCreationService.Controllers
 
         
         [HttpGet]
-        [Authorize(Roles = "USER")]
+        //[Authorize(Roles = "USER")]
         public async Task<IActionResult> Get()
         {
             var planners = await _plannerService.GetAllPlannersAsync();
@@ -44,6 +44,7 @@ namespace EventCreationService.Controllers
         {
             var createdPlanner = await _plannerService.CreatePlannerAsync(planner);
             return CreatedAtAction(nameof(Get), new { id = createdPlanner.Id }, createdPlanner);
+           
         }
 
         [HttpPut]

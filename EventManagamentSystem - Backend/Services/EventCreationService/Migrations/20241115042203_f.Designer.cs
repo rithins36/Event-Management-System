@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EventCreationService.Migrations
 {
     [DbContext(typeof(PlannerDbContext))]
-    [Migration("20241113114907_lkl")]
-    partial class lkl
+    [Migration("20241115042203_f")]
+    partial class f
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

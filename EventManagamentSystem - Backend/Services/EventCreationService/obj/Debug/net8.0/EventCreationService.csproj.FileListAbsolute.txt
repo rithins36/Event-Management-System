@@ -140,12 +140,17 @@ C:\Users\Administrator\source\repos\EventCreationService\EventCreationService\ob
 C:\Users\Administrator\source\repos\EventCreationService\EventCreationService\obj\Debug\net8.0\EventCreationService.pdb
 C:\Users\Administrator\source\repos\EventCreationService\EventCreationService\obj\Debug\net8.0\EventCreationService.genruntimeconfig.cache
 C:\Users\Administrator\source\repos\EventCreationService\EventCreationService\obj\Debug\net8.0\ref\EventCreationService.dll
+C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\EventCreationService.exe
+C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\EventCreationService.dll
+C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\appsettings.json
-C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\EventCreationService.exe
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\EventCreationService.deps.json
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\EventCreationService.runtimeconfig.json
-C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\EventCreationService.dll
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\EventCreationService.pdb
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Azure.Identity.dll
@@ -156,10 +161,8 @@ C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - B
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
-C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
@@ -176,12 +179,9 @@ C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - B
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Mono.TextTemplating.dll
-C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\System.CodeDom.dll
 C:\Users\Administrator\Desktop\Event-Management-System\EventManagamentSystem - Backend\Services\EventCreationService\bin\Debug\net8.0\System.Composition.AttributedModel.dll
