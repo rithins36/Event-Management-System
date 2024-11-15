@@ -453,11 +453,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\APIGateway\\APIGateway.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\APIGateway\\APIGateway.csproj",
       "projectName": "APIGateway",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\APIGateway\\APIGateway.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\APIGateway\\APIGateway.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\APIGateway\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\APIGateway\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
