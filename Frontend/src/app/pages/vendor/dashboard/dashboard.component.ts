@@ -8,12 +8,11 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [
     CommonModule,
-    FormsModule, 
+    FormsModule,
   ],
   templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.css'
+  styleUrls: ['./dashboard.component.css']
 })
-
 export class DashboardComponent {
 
   vendor = {
@@ -22,7 +21,9 @@ export class DashboardComponent {
     contactInfo: '',
     serviceType: '',
     cost: 0
-  }
+  };
+
+  registrationSuccess = false; // Tracks success state
 
   constructor(private vendorService: VendorService) { }
 
@@ -30,6 +31,7 @@ export class DashboardComponent {
     this.vendorService.addVendor(this.vendor).subscribe(
       response => {
         console.log('Vendor added successfully:', response);
+        this.registrationSuccess = true; // Set success state
       },
       error => {
         console.error('Error adding vendor:', error);
