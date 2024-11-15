@@ -12,6 +12,6 @@
     <li *ngFor="let vendor of selectedVendors">{{vendor.name}} - ${{vendor.cost}}</li>
   </ul>
 
-  <h3>Total Budget: ${{ totalCost }}</h3>
+  <h3>Total Budget: Rs {{ totalCost }}</h3>
   <button (click)="makePayment()">Proceed to Payment</button>
 </div>

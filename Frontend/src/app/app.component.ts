@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { DashboardComponent } from "./pages/vendor/dashboard/dashboard.component";
-import { LoginComponent } from "./components/login/login.component";
+// import { LoginComponent } from "./components/login/login.component";
 import { EventDetailsComponent } from "./pages/user/event-details/event-details.component";
 import { HttpClientModule } from '@angular/common/http';
 
@@ -11,7 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     RouterOutlet,
     DashboardComponent,
-    LoginComponent,
+    // LoginComponent,
     EventDetailsComponent,
     HttpClientModule
 ],

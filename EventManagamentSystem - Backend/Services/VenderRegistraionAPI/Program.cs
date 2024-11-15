@@ -22,9 +22,9 @@ namespace VenderRegistraionAPI
             // Configure CORS
             builder.Services.AddCors(options =>
             {
-                options.AddPolicy("AllowSpecificOrigin", builder =>
+                options.AddPolicy("AllowSpecificOrigin", policy =>
                 {
-                    builder.WithOrigins("http://localhost:4200") // Allow requests from Angular app
+                   policy.WithOrigins("http://localhost:4200") // Allow requests from Angular app
                            .AllowAnyMethod()
                            .AllowAnyHeader();
                 });
