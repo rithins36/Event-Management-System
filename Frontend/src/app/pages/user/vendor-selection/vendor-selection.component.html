@@ -6,16 +6,22 @@
 
             <div class="form-items">
               <h2>Select Venue</h2>
-              <div *ngFor="let venue of venues">
-                <input 
-                  type="radio" 
-                  name="venueSelection" 
-                  [(ngModel)]="selectedVenue" 
-                  [value]="venue"
-                > 
-                {{venue.VenueName}} - ${{venue.Rent}}
+              <div class="venue-container">
+                <div 
+                  *ngFor="let venue of venues" 
+                  (click)="selectVenue(venue)" 
+                  [class.selected]="selectedVenue === venue" 
+                  style="border: 1px white solid; cursor: pointer;"
+                >
+                  <div class="venue-list">
+                    <span>{{venue.VenueName}}</span> 
+                    <span>{{venue.Address}}</span>
+                    <span>{{venue.Capacity}}</span>
+                    <span>{{venue.Rent}}</span>
+                  </div>
+                </div>
               </div>
-            </div>
+                          </div>
 
               <div class="form-items">
                 <h2>Select Vendors</h2>

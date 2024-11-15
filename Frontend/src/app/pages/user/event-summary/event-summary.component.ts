@@ -28,12 +28,18 @@ export class EventSummaryComponent implements OnInit {
   }
 
   makePayment() {
+
+     // Convert selected vendor IDs to a comma-separated string
+    const vendorIds = this.selectedVendors.map(vendor => vendor.vendorID).join(',');
+    
     const eventPayload = {
       ...this.eventDetails,
-      vendors: this.selectedVendors,
-      venue: this.selectedVenue,
-      totalCost: this.totalCost,
+      userId: 0,
+      venueId: this.selectedVenue.VenueId,
+      vendorIds,
+      // totalCost: this.totalCost,
     };
+    console.log(eventPayload);
 
     this.eventService.postEvent(eventPayload).subscribe(
       (response) => {
