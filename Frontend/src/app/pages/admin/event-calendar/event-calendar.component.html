@@ -1,1 +1,13 @@
-<p>event-calendar works!</p>
+<div class="admin-calendar-container">
+    <h2>Approved Events Calendar</h2>
+
+    <div *ngIf="isLoading" class="loading">Loading events...</div>
+
+    <div *ngIf="!isLoading">
+      <mwl-calendar-month-view
+        [viewDate]="viewDate"
+        [events]="events"
+        (eventClicked)="handleEventClick($event.event)">
+      </mwl-calendar-month-view>
+    </div>
+</div>

@@ -19,6 +19,25 @@ namespace authApi
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddCors(options =>
+
+            {
+
+                options.AddPolicy("AllowSpecificOrigin", builder =>
+
+                {
+
+                    builder.WithOrigins("http://localhost:4200") // Allow requests from Angular app
+
+                       .AllowAnyMethod()
+
+                       .AllowAnyHeader();
+
+                });
+
+            });
+
             builder.Services.Configure<JwtOptions>(builder.Configuration.GetSection("ApiSettings:JwtOptions"));
             builder.Services.AddDbContext<AppDbContext>(option => option.UseSqlServer(builder.Configuration.GetConnectionString("auth")));
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
@@ -38,6 +57,8 @@ namespace authApi
             }
 
             app.UseHttpsRedirection();
+
+            app.UseCors("AllowSpecificOrigin");
 
             app.UseAuthorization();
 
