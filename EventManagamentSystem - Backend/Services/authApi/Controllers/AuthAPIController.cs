@@ -1,7 +1,11 @@
 ﻿using authApi.model.Dto;
 using authApi.Services;
+using Microsoft.AspNetCore.Authorization.Infrastructure;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace authApi.Controllers
 {
@@ -11,22 +15,24 @@ namespace authApi.Controllers
     {
         private readonly IAuthService _authService;
         protected ResponseDto _response;
-
+       
 
         public AuthAPIController(IAuthService authService)
         {
             _authService = authService;
             _response = new();
+          
+
         }
 
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegistrationRequestDto model)
         {
-            var errorMessage = await _authService.Register(model);
-            if (!string.IsNullOrEmpty(errorMessage))
+            var result = await _authService.Register(model);
+            if (!string.IsNullOrEmpty(result))
             {
                 _response.Issuccess = true;
-                _response.Message = errorMessage;
+                _response.Message = result;
                
                 return Ok(_response);
             }
@@ -49,9 +55,17 @@ namespace authApi.Controllers
                     _response.Message = "Username and password incorrect";
                     return BadRequest(_response);
                 }
-                _response.Result = loginResponse;
+                else
+                {
+                    _response.Issuccess = true;
+                    _response.Message = "Login Successfull";
+                    _response.Result = loginResponse;
+                    _response.Role = new JwtSecurityTokenHandler().ReadJwtToken(loginResponse.Token).Payload["role"]?.ToString();
+
                 return Ok(_response);
+
             }
+        }
 
             [HttpPost("AssignRole")]
             public async Task<IActionResult> AssignRole([FromBody] RoleRequestDto model)
