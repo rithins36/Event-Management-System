@@ -1,37 +1,55 @@
 <div class="outer-container">
     <div class="container" [ngClass]="{'right-panel-active': isSignUpActive}" id="container">
         <div class="form-container sign-up-container">
-            <form (ngSubmit)="onSignUp()">
+            <form (ngSubmit)="onSignUp(signUpForm)" #signUpForm="ngForm">
                 <h1>Create Account</h1>
-                <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+                
                 <span>or use your email for registration</span>
-                <input type="text" placeholder="Name" name="username" required />
-                <input type="tel" placeholder="Mobile Number" id="phone" name="number" required />
-                <input type="email" placeholder="Email" name="email" required />
-                <input type="password" placeholder="Password" name="password" required />
-                <button type="submit">Sign Up</button>
-            </form>
-        </div>
-        <div class="form-container sign-in-container">
-            <form (ngSubmit)="onSignIn()">
-                <h1>Sign in</h1>
-                <div class="social-container">
-                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                <input type="text" placeholder="Name" name="name" ngModel required />
+                <input type="tel" placeholder="Mobile Number" name="phone" ngModel required />
+                <input type="email" placeholder="Email" name="email" ngModel required />
+                <input type="password" placeholder="Password" name="password" ngModel required />
+              
+                <div>
+                  <label for="admin">
+                    <input type="radio" id="admin" name="role" value="Admin" ngModel /> Admin
+                  </label>
+                  <label for="vendor">
+                    <input type="radio" id="vendor" name="role" value="Vendor" ngModel /> Vendor
+                  </label>
+                  <label for="host">
+                    <input type="radio" id="host" name="role" value="Host" ngModel /> Host
+                  </label>
                 </div>
-                <span>or use your account</span>
-                <input type="email" name="email" placeholder="Email" />
-                <input type="password" name="password" placeholder="Password" />
-                <a href="#">Forgot your password?</a>
-                <button type="submit">Sign In</button>
-            </form>
-        </div>
-        <div class="overlay-container">
+                
+                <button type="submit">Sign Up</button>
+                <div class="social-container">
+                  <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                  <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                
+
+              </form>
+                      </div>
+                      <div class="form-container sign-in-container" *ngIf="!isSignUpActive">
+                        <form (ngSubmit)="onSignIn(signInForm)" #signInForm="ngForm">
+                          <h1>Sign In</h1>
+                         
+                          <input type="email" name="email" placeholder="Email" ngModel required />
+                          <input type="password" name="password" placeholder="Password" ngModel required />
+                          <a href="#">Forgot your password?</a>
+                          <span>or use the below </span>
+
+                          <div class="social-container">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                          </div>
+                          <button type="submit" [disabled]="signInForm.invalid">Sign In</button>
+                        </form>
+                      </div>
+                              <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
                     <h1>Welcome Back!</h1>

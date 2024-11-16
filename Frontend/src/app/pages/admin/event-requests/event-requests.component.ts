@@ -21,7 +21,7 @@ export class EventRequestsComponent implements OnInit{
   }
 
   fetchEvents(): void {
-    const apiUrl = 'https://localhost:7262/api/Event?status=false'; 
+    const apiUrl = 'https://localhost:7262/api/Event?status=null'; 
     // Adjust based on your API structure
     this.http.get<Event[]>(apiUrl).subscribe({
       next: (response: any[]) => {

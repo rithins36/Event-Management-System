@@ -104,93 +104,40 @@ namespace authApi.Services
                 NormalizedEmail = registrationRequestDto.Email.ToUpper(),
                 Name = registrationRequestDto.Name,
                 PhoneNumber = registrationRequestDto.PhoneNumber,
-
             };
-            try { 
-            //{   // Prepare user data for User API
-            //    var userData = new User
-            //    {
-            //        IdentityUserId = user.Id,
-            //        DisplayName = registrationRequestDto.Name
-            //    };
 
-            //    var StreakData = new StreakDto
-            //    {
-            //        IdentityUserId = user.Id,
-            //        Streak = 0
-            //    };
-
-            //    // Call User API to save additional user information
-            //    var userApiUrl = "https://localhost:7080/api/User"; // Replace with actual URL
-            //    var userContent = new StringContent(JsonSerializer.Serialize(userData), Encoding.UTF8, "application/json");
-
-            //    var response = await _httpClient.PostAsync(userApiUrl, userContent);
-
-            //    if (!response.IsSuccessStatusCode)
-            //    {
-            //        return "Failed to save user info in User API.";
-            //    }
-
-            //    // Call Streak API to save additional user information
-            //    var StreakApiUrl = "https://localhost:7055/api/Streak/Create"; // Replace with actual URL
-            //    var StreakContent = new StringContent(JsonSerializer.Serialize(StreakData), Encoding.UTF8, "application/json");
-
-            //    var respon = await _httpClient.PostAsync(StreakApiUrl, StreakContent);
-
-            //    if (!respon.IsSuccessStatusCode)
-            //    {
-            //        return "Failed to save Streak info in Streak API.";
-            //    }
-
-
-
+            try
+            {
+                // Create the user in the Identity framework
                 var result = await _userManager.CreateAsync(user, registrationRequestDto.Password);
-                if (result.Succeeded)
+                if (!result.Succeeded)
                 {
-                    var userToReturn = _db.ApplicationUser.First(user => user.UserName == registrationRequestDto.Email);
-
-                    //working on this
-                    var roleExist = await _roleManager.RoleExistsAsync("User");
-                    if (!roleExist)
-                    {
-                        await _roleManager.CreateAsync(new IdentityRole("User"));
-                    }
-
-
-                    var resp = await _userManager.AddToRoleAsync(userToReturn, "User");
-
-                    if (!resp.Succeeded)
-                    {
-                        return "Failed to save user info in User API.";
-                    }
-
-
-                    //UserDto userDto = new()
-                    //{
-                    //    Email = userToReturn.Email,
-                    //    Id = userToReturn.Id,
-                    //    Name = userToReturn.Name,
-                    //    PhoneNumber = userToReturn.PhoneNumber
-                    //};
-
-
-
-                    return "";
-                }
-                else
-                {
-                    return result.Errors.FirstOrDefault().Description;
+                    return result.Errors.FirstOrDefault()?.Description ?? "User creation failed.";
                 }
 
+                // Validate the role
+                var roleName = registrationRequestDto.Role ?? "User"; // Default role if none provided
+                if (!await _roleManager.RoleExistsAsync(roleName))
+                {
+                    await _roleManager.CreateAsync(new IdentityRole(roleName));
+                }
+
+                // Assign the role to the user
+                var roleAssignmentResult = await _userManager.AddToRoleAsync(user, roleName);
+                if (!roleAssignmentResult.Succeeded)
+                {
+                    return "Failed to assign role to the user.";
+                }
+
+                return "Registration successful.";
             }
             catch (Exception ex)
             {
-
-            return (ex.ToString());
+                // Log or handle the exception
+                return ex.ToString();
             }
-            return "Error";
-
         }
+
     }
 }
 
