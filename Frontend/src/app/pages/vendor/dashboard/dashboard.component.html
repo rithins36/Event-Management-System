@@ -1,0 +1,79 @@
+<div class="vendor-container">
+    <div class="form-image">
+      cdsv
+    </div>
+    
+    <!-- Form -->
+    <div *ngIf="!registrationSuccess; else successMessage" class="form-body d-flex align-items-center justify-content-center min-vh-100 bg-light">
+      <div class="row w-100">
+        <div class="col-md-10 m-8">
+          <div class="form-holder shadow-lg p-4 rounded">
+            <div class="form-content">
+              <div class="form-items text-center">
+                <h3 class="mb-4" style="color: #af9453;">Register Yourself</h3>
+                <form (ngSubmit)="onSubmit()">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" [(ngModel)]="vendor.name" name="name" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" [(ngModel)]="vendor.email" name="email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="contactInfo" class="form-label">Contact Info</label>
+                    <input type="text" class="form-control" [(ngModel)]="vendor.contactInfo" name="contactInfo" required>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Service Type</label>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" [(ngModel)]="vendor.serviceType" name="serviceType" value="Photography" required>
+                        <label class="form-check-label">Photography</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" [(ngModel)]="vendor.serviceType" name="serviceType" value="Catering">
+                        <label class="form-check-label">Catering</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" [(ngModel)]="vendor.serviceType" name="serviceType" value="Decorations">
+                        <label class="form-check-label">Decorations</label>
+                      </div>
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" [(ngModel)]="vendor.serviceType" name="serviceType" value="Sounds">
+                        <label class="form-check-label">Sounds</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="cost" class="form-label">Cost</label>
+                    <input type="number" class="form-control" step="0.01" [(ngModel)]="vendor.cost" name="cost" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100 shadow-sm">Submit</button>
+                </form> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Success Message -->
+    <ng-template #successMessage>
+      <div class="success-container d-flex align-items-center justify-content-center min-vh-100 bg-light">
+        <div class="text-center p-4 shadow-lg rounded bg-white">
+          <h3 class="text-success mb-3">Registered Successfully!</h3>
+          <p class="mb-3">Here are your details:</p>
+          <ul class="list-group text-start">
+            <li class="list-group-item"><strong>Name:</strong> {{ vendor.name }}</li>
+            <li class="list-group-item"><strong>Email:</strong> {{ vendor.email }}</li>
+            <li class="list-group-item"><strong>Contact Info:</strong> {{ vendor.contactInfo }}</li>
+            <li class="list-group-item"><strong>Service Type:</strong> {{ vendor.serviceType }}</li>
+            <li class="list-group-item"><strong>Cost:</strong> {{ vendor.cost | currency }}</li>
+          </ul>
+          <button class="btn btn-primary mt-3" (click)="registrationSuccess = false">Register Another Vendor</button>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+  
