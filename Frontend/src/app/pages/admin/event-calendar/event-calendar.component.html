@@ -1,13 +1,19 @@
-<div class="admin-calendar-container">
+<div class="sidebar-container">
+  <app-sidebar></app-sidebar>
+
+  <div class="admin-calendar-container content-container">
     <h2>Approved Events Calendar</h2>
 
     <div *ngIf="isLoading" class="loading">Loading events...</div>
 
-    <div *ngIf="!isLoading">
+    <div *ngIf="!isLoading" class="calendar-wrapper">
       <mwl-calendar-month-view
+        style="width: 80%;"
         [viewDate]="viewDate"
         [events]="events"
         (eventClicked)="handleEventClick($event.event)">
       </mwl-calendar-month-view>
     </div>
+  </div>
 </div>
+

@@ -4,6 +4,7 @@ import { DashboardComponent } from "./pages/vendor/dashboard/dashboard.component
 // import { LoginComponent } from "./components/login/login.component";
 import { EventDetailsComponent } from "./pages/user/event-details/event-details.component";
 import { HttpClientModule } from '@angular/common/http';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
     DashboardComponent,
     // LoginComponent,
     EventDetailsComponent,
-    HttpClientModule
+    HttpClientModule,
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

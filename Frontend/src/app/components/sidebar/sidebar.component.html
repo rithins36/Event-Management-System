@@ -1,0 +1,60 @@
+<div class="sidebar">
+  <div class="sidebar-header">
+    <h2>App Sidebar</h2>
+  </div>
+
+  <div class="sidebar-links">
+    <ul>
+      <!-- Admin specific links -->
+      <ng-container *ngIf="userRole === 'Admin'">
+        <li [class.active]="isActive('/app-event-calendar')">
+          <a [routerLink]="['/app-event-calendar']">
+            <i class="fa fa-calendar"></i> Admin Dashboard
+          </a>
+        </li>
+        <li [class.active]="isActive('/app-event-requests')">
+          <a [routerLink]="['/app-event-requests']">
+            <i class="fa fa-list-alt"></i> Event Requests
+          </a>
+        </li>
+      </ng-container>
+
+      <!-- Host specific links -->
+      <ng-container *ngIf="userRole === 'Host'">
+        <li [class.active]="isActive('/event-details')">
+          <a [routerLink]="['/event-details']">
+            <i class="fa fa-info-circle"></i> Event Details
+          </a>
+        </li>
+      </ng-container>
+
+      <!-- Vendor specific links -->
+      <ng-container *ngIf="userRole === 'Vendor'">
+        <li [class.active]="isActive('/vendor-dashboard')">
+          <a [routerLink]="['/vendor-dashboard']">
+            <i class="fa fa-store"></i> Vendor Dashboard
+          </a>
+        </li>
+        <!-- <li [class.active]="isActive('/vendor-orders')">
+          <a [routerLink]="['/vendor-orders']">
+            <i class="fa fa-shopping-cart"></i> Orders
+          </a>
+        </li> -->
+      </ng-container>
+
+      <!-- Common Links -->
+      <ng-container>
+        <li [class.active]="isActive('/profile')">
+          <a [routerLink]="['/profile']" class="profile-link">
+            <i class="fa fa-user"></i> Profile
+          </a>
+        </li>
+        <li>
+          <a (click)="logout()" class="logout-link">
+            <i class="fa fa-sign-out-alt"></i> Logout
+          </a>
+        </li>
+      </ng-container>
+    </ul>
+  </div>
+</div>

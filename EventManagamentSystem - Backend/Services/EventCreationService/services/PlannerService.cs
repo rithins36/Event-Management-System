@@ -24,6 +24,22 @@ namespace EventCreationService.services
             return await _context.Planners.FindAsync(id);
         }
 
+        public async Task<List<Planner>> GetPlannersByStatusAsync(bool? status)
+        {
+            if (status == null)
+            {
+                // Fetch planners where status is null.
+                return await _context.Planners.Where(p => p.Status == null).ToListAsync();
+            }
+            else
+            {
+                // Fetch planners based on the provided status.
+                return await _context.Planners.Where(p => p.Status == status).ToListAsync();
+            }
+        }
+
+
+
         public async Task<PlannerDto> CreatePlannerAsync(PlannerDto plannerdto)
         {
             Planner p = new Planner()

@@ -39,6 +39,32 @@ namespace EventCreationService.Controllers
             return Ok(planner);
         }
 
+        [HttpGet("status")]
+        public async Task<IActionResult> GetByStatus([FromQuery] bool? status)
+        {
+            if (status == null)
+            {
+                // Fetch planners where status is null, or handle the default behavior.
+                var planners = await _plannerService.GetPlannersByStatusAsync(null);
+                if (planners == null || !planners.Any())
+                {
+                    return NotFound("No planners found.");
+                }
+                return Ok(planners);
+            }
+            else
+            {
+                // Fetch planners based on the provided status (true or false).
+                var planners = await _plannerService.GetPlannersByStatusAsync(status.Value);
+                if (planners == null || !planners.Any())
+                {
+                    return NotFound($"No planners found with status {status.Value}.");
+                }
+                return Ok(planners);
+            }
+        }
+
+
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] PlannerDto planner)
         {

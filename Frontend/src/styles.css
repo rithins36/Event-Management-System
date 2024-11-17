@@ -1,0 +1,14 @@
+.sidebar-container{
+    display: flex;
+    height: 100vh;
+}
+
+.content-container {
+    padding: 20px;
+    flex-grow: 1; /* Ensures it takes the remaining space */
+    background-color: #fff; /* For background contrast */
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Makes the content scrollable if it's too long */
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

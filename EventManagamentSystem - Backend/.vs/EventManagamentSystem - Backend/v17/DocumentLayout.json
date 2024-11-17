@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{82EAEA03-1E5A-42C4-9F2B-4BECAC6E6442}|Services\\EventCreationService\\EventCreationService.csproj|c:\\users\\administrator\\documents\\event-management-system\\eventmanagamentsystem - backend\\services\\eventcreationservice\\controllers\\plannercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82EAEA03-1E5A-42C4-9F2B-4BECAC6E6442}|Services\\EventCreationService\\EventCreationService.csproj|solutionrelative:services\\eventcreationservice\\controllers\\plannercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82EAEA03-1E5A-42C4-9F2B-4BECAC6E6442}|Services\\EventCreationService\\EventCreationService.csproj|c:\\users\\administrator\\documents\\event-management-system\\eventmanagamentsystem - backend\\services\\eventcreationservice\\services\\plannerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82EAEA03-1E5A-42C4-9F2B-4BECAC6E6442}|Services\\EventCreationService\\EventCreationService.csproj|solutionrelative:services\\eventcreationservice\\services\\plannerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82EAEA03-1E5A-42C4-9F2B-4BECAC6E6442}|Services\\EventCreationService\\EventCreationService.csproj|c:\\users\\administrator\\documents\\event-management-system\\eventmanagamentsystem - backend\\services\\eventcreationservice\\services\\iplannerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82EAEA03-1E5A-42C4-9F2B-4BECAC6E6442}|Services\\EventCreationService\\EventCreationService.csproj|solutionrelative:services\\eventcreationservice\\services\\iplannerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2AE6F704-05EC-4052-80B6-CD29638540C3}|Services\\authApi\\authApi.csproj|c:\\users\\administrator\\documents\\event-management-system\\eventmanagamentsystem - backend\\services\\authapi\\controllers\\authapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2AE6F704-05EC-4052-80B6-CD29638540C3}|Services\\authApi\\authApi.csproj|solutionrelative:services\\authapi\\controllers\\authapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +46,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IPlannerService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\services\\IPlannerService.cs",
+              "RelativeDocumentMoniker": "Services\\EventCreationService\\services\\IPlannerService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\services\\IPlannerService.cs",
+              "RelativeToolTip": "Services\\EventCreationService\\services\\IPlannerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T09:23:24.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PlannerService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\services\\PlannerService.cs",
+              "RelativeDocumentMoniker": "Services\\EventCreationService\\services\\PlannerService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\services\\PlannerService.cs",
+              "RelativeToolTip": "Services\\EventCreationService\\services\\PlannerService.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAkwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T09:23:05.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlannerController.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\Controllers\\PlannerController.cs",
+              "RelativeDocumentMoniker": "Services\\EventCreationService\\Controllers\\PlannerController.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\Controllers\\PlannerController.cs",
+              "RelativeToolTip": "Services\\EventCreationService\\Controllers\\PlannerController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAiwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T08:49:33.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\authApi\\model\\Dto\\ResponseDto.cs",
               "RelativeDocumentMoniker": "Services\\authApi\\model\\Dto\\ResponseDto.cs",
@@ -42,25 +93,24 @@
               "RelativeToolTip": "Services\\authApi\\model\\Dto\\ResponseDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T10:29:35.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T10:29:35.83Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "AuthAPIController.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\authApi\\Controllers\\AuthAPIController.cs",
               "RelativeDocumentMoniker": "Services\\authApi\\Controllers\\AuthAPIController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\authApi\\Controllers\\AuthAPIController.cs*",
-              "RelativeToolTip": "Services\\authApi\\Controllers\\AuthAPIController.cs*",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowDwAAABxAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\authApi\\Controllers\\AuthAPIController.cs",
+              "RelativeToolTip": "Services\\authApi\\Controllers\\AuthAPIController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA1wDwAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T07:20:23.579Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\authApi\\Program.cs",
               "RelativeDocumentMoniker": "Services\\authApi\\Program.cs",
@@ -68,12 +118,11 @@
               "RelativeToolTip": "Services\\authApi\\Program.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAcwDwAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T07:01:08.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T07:01:08.157Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\Program.cs",
               "RelativeDocumentMoniker": "Services\\EventCreationService\\Program.cs",
@@ -81,8 +130,7 @@
               "RelativeToolTip": "Services\\EventCreationService\\Program.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAgwCcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T07:00:43.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T07:00:43.69Z"
             }
           ]
         }

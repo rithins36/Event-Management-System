@@ -82,6 +82,7 @@ export class LoginComponent {
           // Store user details and token in localStorage
           localStorage.setItem('user', JSON.stringify(response.user));
           localStorage.setItem('token', response.token);
+          localStorage.setItem('role', response.role);
 
           const userRole = response.role;
 

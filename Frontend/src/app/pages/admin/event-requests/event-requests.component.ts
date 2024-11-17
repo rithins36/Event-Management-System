@@ -2,11 +2,12 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { SidebarComponent } from '../../../components/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-event-requests',
   standalone: true,
-  imports: [FormsModule,CommonModule],
+  imports: [FormsModule,CommonModule,SidebarComponent],
   templateUrl: './event-requests.component.html',
   styleUrl: './event-requests.component.css'
 })
@@ -21,7 +22,7 @@ export class EventRequestsComponent implements OnInit{
   }
 
   fetchEvents(): void {
-    const apiUrl = 'https://localhost:7262/api/Event?status=null'; 
+    const apiUrl = 'https://localhost:7262/api/Event/status'; 
     // Adjust based on your API structure
     this.http.get<Event[]>(apiUrl).subscribe({
       next: (response: any[]) => {
@@ -30,7 +31,7 @@ export class EventRequestsComponent implements OnInit{
       },
       error: () => {
         this.isLoading = false;
-        alert('Failed to fetch events.');
+        console.log('Failed to fetch events.');
       }
     });
   }
