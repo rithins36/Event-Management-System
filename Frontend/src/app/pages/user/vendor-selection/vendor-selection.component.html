@@ -1,0 +1,37 @@
+
+<div class="form-body">
+  <div class="row">
+      <div class="form-holder">
+          <div class="form-content">
+
+            <div class="form-items">
+              <h2>Select Venue</h2>
+              <div class="venue-container">
+                <div 
+                  *ngFor="let venue of venues" 
+                  (click)="selectVenue(venue)" 
+                  [class.selected]="selectedVenue === venue" 
+                  style="border: 1px white solid; cursor: pointer;"
+                >
+                  <div class="venue-list">
+                    <span>{{venue.VenueName}}</span> 
+                    <span>{{venue.Address}}</span>
+                    <span>{{venue.Capacity}}</span>
+                    <span>{{venue.Rent}}</span>
+                  </div>
+                </div>
+              </div>
+                          </div>
+
+              <div class="form-items">
+                <h2>Select Vendors</h2>
+                <div *ngFor="let vendor of vendors">
+                  <input type="checkbox" [(ngModel)]="vendor.selected"> {{vendor.name}} - ${{vendor.cost}}
+                </div>
+              </div>
+              <button (click)="next()">Next</button>
+
+          </div>
+      </div>
+  </div>
+</div>

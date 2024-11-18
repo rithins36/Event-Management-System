@@ -2,18 +2,19 @@ import { Component } from '@angular/core';
 import { VendorService } from './vendor.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { SidebarComponent } from '../../../components/sidebar/sidebar.component';
 
 @Component({
   selector: 'vendor-dashboard',
   standalone: true,
   imports: [
     CommonModule,
-    FormsModule, 
+    FormsModule,
+    SidebarComponent
   ],
   templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.css'
+  styleUrls: ['./dashboard.component.css']
 })
-
 export class DashboardComponent {
 
   vendor = {
@@ -22,7 +23,9 @@ export class DashboardComponent {
     contactInfo: '',
     serviceType: '',
     cost: 0
-  }
+  };
+
+  registrationSuccess = false; // Tracks success state
 
   constructor(private vendorService: VendorService) { }
 
@@ -30,6 +33,7 @@ export class DashboardComponent {
     this.vendorService.addVendor(this.vendor).subscribe(
       response => {
         console.log('Vendor added successfully:', response);
+        this.registrationSuccess = true; // Set success state
       },
       error => {
         console.error('Error adding vendor:', error);

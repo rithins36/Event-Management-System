@@ -1,126 +1,83 @@
-<!-- 
+<div class="sidebar-container">
 
-<form (ngSubmit)="onSubmit()" >
-    <label for="name">Name:</label><br>
-    <input type="text" [(ngModel)]="vendor.name" name="name" required><br><br>
-
-    <label for="name">Email:</label><br>
-    <input type="text" [(ngModel)]="vendor.email" name="email" required><br><br>
-
-    <label for="contactInfo">Contact Info:</label><br>
-    <input type="text" [(ngModel)]="vendor.contactInfo" name="contactInfo" required><br><br>
-
-    <label>Service Type:</label><br>
-    <input type="radio" [(ngModel)]="vendor.serviceType" name="serviceType" value="Photography" required> Photography<br>
-    <input type="radio" [(ngModel)]="vendor.serviceType" name="serviceType" value="Catering"> Catering<br>
-    <input type="radio" [(ngModel)]="vendor.serviceType" name="serviceType" value="Decorations"> Decorations<br>
-    <input type="radio" [(ngModel)]="vendor.serviceType" name="serviceType" value="Sounds"> Sounds<br><br>
-
-    <label for="cost">Cost:</label><br>
-    <input type="number" step="0.01" [(ngModel)]="vendor.cost" name="cost" required><br><br>
-
-    <input type="submit" value="Submit">
-</form> -->
-
-<div class="form-body">
-    <div class="row">
-        <div class="form-holder">
-            <div class="form-content">
-                <div class="form-items">
-                    <h3>Register Today</h3>
-                    <p>Fill in the data below.</p>
-                    <!-- <form class="requires-validation" novalidate>
-
-                        <div class="col-md-12">
-                           <input class="form-control" type="text" name="name" placeholder="Full Name" required>
-                           <div class="valid-feedback">Username field is valid!</div>
-                           <div class="invalid-feedback">Username field cannot be blank!</div>
-                        </div>
-
-                        <div class="col-md-12">
-                            <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
-                             <div class="valid-feedback">Email field is valid!</div>
-                             <div class="invalid-feedback">Email field cannot be blank!</div>
-                        </div>
-
-                       <div class="col-md-12">
-                            <select class="form-select mt-3" required>
-                                  <option selected disabled value="">Position</option>
-                                  <option value="jweb">Junior Web Developer</option>
-                                  <option value="sweb">Senior Web Developer</option>
-                                  <option value="pmanager">Project Manager</option>
-                           </select>
-                            <div class="valid-feedback">You selected a position!</div>
-                            <div class="invalid-feedback">Please select a position!</div>
-                       </div>
-
-
-                       <div class="col-md-12">
-                          <input class="form-control" type="password" name="password" placeholder="Password" required>
-                           <div class="valid-feedback">Password field is valid!</div>
-                           <div class="invalid-feedback">Password field cannot be blank!</div>
-                       </div>
-
-
-                       <div class="col-md-12 mt-3">
-                        <label class="mb-3 mr-1" for="gender">Gender: </label>
-
-                        <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required>
-                        <label class="btn btn-sm btn-outline-secondary" for="male">Male</label>
-
-                        <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" required>
-                        <label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
-
-                        <input type="radio" class="btn-check" name="gender" id="secret" autocomplete="off" required>
-                        <label class="btn btn-sm btn-outline-secondary" for="secret">Secret</label>
-                           <div class="valid-feedback mv-up">You selected a gender!</div>
-                            <div class="invalid-feedback mv-up">Please select a gender!</div>
-                        </div>
-
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                      <label class="form-check-label">I confirm that all data are correct</label>
-                     <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
+  <app-sidebar></app-sidebar>
+  <div class="vendor-container">
+      <div class="form-image">
+        cdsv
+      </div>
+      
+      <!-- Form -->
+      <div *ngIf="!registrationSuccess; else successMessage" class="form-body d-flex align-items-center justify-content-center min-vh-100 bg-light">
+        <div class="row w-100">
+          <div class="col-md-10 m-8">
+            <div class="form-holder shadow-lg p-4 rounded">
+              <div class="form-content">
+                <div class="form-items text-center">
+                  <h3 class="mb-4" style="color: #af9453;">Register Yourself</h3>
+                  <form (ngSubmit)="onSubmit()">
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Name</label>
+                      <input type="text" class="form-control" [(ngModel)]="vendor.name" name="name" required>
                     </div>
-              
-
-                        <div class="form-button mt-3">
-                            <button id="submit" type="submit" class="btn btn-primary">Register</button>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" [(ngModel)]="vendor.email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="contactInfo" class="form-label">Contact Info</label>
+                      <input type="text" class="form-control" [(ngModel)]="vendor.contactInfo" name="contactInfo" required>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Service Type</label>
+                      <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <div class="form-check">
+                          <input type="radio" class="form-check-input" [(ngModel)]="vendor.serviceType" name="serviceType" value="Photography" required>
+                          <label class="form-check-label">Photography</label>
                         </div>
-                    </form> -->
-               
-                    <form (ngSubmit)="onSubmit()" >
-                        <label for="name">Name:</label><br>
-                        <input type="text" [(ngModel)]="vendor.name" name="name" required><br><br>
-                    
-                        <label for="name">Email:</label><br>
-                        <input type="text" [(ngModel)]="vendor.email" name="email" required><br><br>
-                    
-                        <label for="contactInfo">Contact Info:</label><br>
-                        <input type="text" [(ngModel)]="vendor.contactInfo" name="contactInfo" required><br><br>
-                    
-                        <label>Service Type:</label><br>
-                        <label class="white-text">
-                            <input type="radio" [(ngModel)]="vendor.serviceType" name="serviceType" value="Photography" required> Photography
-                        </label><br>
-                        <label class="white-text">
-                            <input type="radio" [(ngModel)]="vendor.serviceType" name="serviceType" value="Catering"> Catering
-                        </label><br>
-                        <label class="white-text">
-                            <input type="radio" [(ngModel)]="vendor.serviceType" name="serviceType" value="Decorations"> Decorations
-                        </label><br>
-                        <label class="white-text">
-                            <input type="radio" [(ngModel)]="vendor.serviceType" name="serviceType" value="Sounds"> Sounds
-                        </label><br><br>   
-                                         
-                        <label for="cost">Cost:</label><br>
-                        <input type="number" step="0.01" [(ngModel)]="vendor.cost" name="cost" required><br><br>
-                    
-                        <input type="submit" value="Submit">
-                    </form> 
-                    
+                        <div class="form-check">
+                          <input type="radio" class="form-check-input" [(ngModel)]="vendor.serviceType" name="serviceType" value="Catering">
+                          <label class="form-check-label">Catering</label>
+                        </div>
+                        <div class="form-check">
+                          <input type="radio" class="form-check-input" [(ngModel)]="vendor.serviceType" name="serviceType" value="Decorations">
+                          <label class="form-check-label">Decorations</label>
+                        </div>
+                        <div class="form-check">
+                          <input type="radio" class="form-check-input" [(ngModel)]="vendor.serviceType" name="serviceType" value="Sounds">
+                          <label class="form-check-label">Sounds</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="cost" class="form-label">Cost</label>
+                      <input type="number" class="form-control" step="0.01" [(ngModel)]="vendor.cost" name="cost" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 shadow-sm">Submit</button>
+                  </form> 
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
+    
+      <!-- Success Message -->
+      <ng-template #successMessage>
+        <div class="success-container d-flex align-items-center justify-content-center min-vh-100 bg-light">
+          <div class="text-center p-4 shadow-lg rounded bg-white">
+            <h3 class="text-success mb-3">Registered Successfully!</h3>
+            <p class="mb-3">Here are your details:</p>
+            <ul class="list-group text-start">
+              <li class="list-group-item"><strong>Name:</strong> {{ vendor.name }}</li>
+              <li class="list-group-item"><strong>Email:</strong> {{ vendor.email }}</li>
+              <li class="list-group-item"><strong>Contact Info:</strong> {{ vendor.contactInfo }}</li>
+              <li class="list-group-item"><strong>Service Type:</strong> {{ vendor.serviceType }}</li>
+              <li class="list-group-item"><strong>Cost:</strong> {{ vendor.cost | currency }}</li>
+            </ul>
+            <button class="btn btn-primary mt-3" (click)="registrationSuccess = false">Register Another Vendor</button>
+          </div>
+        </div>
+      </ng-template>
+  </div>
 </div>
+  

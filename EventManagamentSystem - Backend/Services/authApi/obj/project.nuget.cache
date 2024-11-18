@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9CAym1h5oGA=",
+  "dgSpecHash": "zqyhSn8JjB8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\authApi\\authApi.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\authApi\\authApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

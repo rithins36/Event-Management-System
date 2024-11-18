@@ -6,6 +6,8 @@ namespace EventCreationService.services
     {
         Task<List<Planner>> GetAllPlannersAsync();
         Task<Planner> GetPlannerByIdAsync(int id);
+        Task<List<Planner>> GetPlannersByStatusAsync(bool? status);
+
         Task<PlannerDto> CreatePlannerAsync(PlannerDto plannerdto);
         Task<Planner> UpdatePlannerAsync(int id, HostDto hostdto);
         Task<Planner> UpdatePaymentStatus(int id, paymentstatusDto paymentstatusdto);
