@@ -30,14 +30,19 @@ export class DashboardComponent {
   constructor(private vendorService: VendorService) { }
 
   onSubmit() {
-    this.vendorService.addVendor(this.vendor).subscribe(
-      response => {
-        console.log('Vendor added successfully:', response);
-        this.registrationSuccess = true; // Set success state
-      },
-      error => {
-        console.error('Error adding vendor:', error);
-      }
-    );
+    if (this.vendor.name && this.vendor.email && this.vendor.contactInfo && this.vendor.serviceType && this.vendor.cost ) {
+      this.vendorService.addVendor(this.vendor).subscribe(
+        response => {
+          console.log('Vendor added successfully:', response);
+          this.registrationSuccess = true; // Set success state
+        },
+        error => {
+          console.error('Error adding vendor:', error);
+        }
+      );
+    } else {
+      alert("Please fill in all fields before proceeding.");
+    }
+    
   }
 }

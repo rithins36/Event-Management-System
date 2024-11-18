@@ -72,6 +72,7 @@ export class EventCalendarComponent implements OnInit {
     
     this.dialog.open(EventDetailsDialog, {
       width: '400px',
+      panelClass: 'custom-dialog',
       data: event, // Pass event details as data to the modal
     });
     console.log(event.meta);

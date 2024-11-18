@@ -8,8 +8,7 @@
 
     <div *ngIf="!isLoading" class="calendar-wrapper">
       <mwl-calendar-month-view
-        style="width: 80%;"
-        [viewDate]="viewDate"
+        style="width: 100%; border: 2px solid #d1e8e2; border-radius: 12px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);  padding: 20px; background: #ffffff;"        [viewDate]="viewDate"
         [events]="events"
         (eventClicked)="handleEventClick($event.event)">
       </mwl-calendar-month-view>

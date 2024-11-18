@@ -80,15 +80,15 @@ export class LoginComponent {
           // Extract the role from the response
 
           // Store user details and token in localStorage
-          localStorage.setItem('user', JSON.stringify(response.user));
-          localStorage.setItem('token', response.token);
+          localStorage.setItem('user', JSON.stringify(response.result.user));
+          localStorage.setItem('token', response.result.token);
           localStorage.setItem('role', response.role);
 
           const userRole = response.role;
 
           // Navigate based on role
           if (userRole === 'Admin') {
-            this.router.navigate(['/app-event-requests']);
+            this.router.navigate(['/app-event-calendar']);
           } else if (userRole === 'Host') {
             this.router.navigate(['/event-details']);
           } else if (userRole === 'Vendor') {

@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { EventService } from '../event-service.service';
 import { CommonModule } from '@angular/common';
+import { SidebarComponent } from '../../../components/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-event-summary',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,SidebarComponent],
   templateUrl: './event-summary.component.html',
   styleUrls: ['./event-summary.component.css']
 })
@@ -14,6 +15,7 @@ export class EventSummaryComponent implements OnInit {
   selectedVendors: any[] = [];
   selectedVenue: any;
   totalCost = 0;
+  paymentSuccess = false;
 
   constructor(private eventService: EventService) {}
 
@@ -28,6 +30,7 @@ export class EventSummaryComponent implements OnInit {
   }
 
   makePayment() {
+    this.paymentSuccess = true;
 
      // Convert selected vendor IDs to a comma-separated string
     const vendorIds = this.selectedVendors.map(vendor => vendor.vendorID).join(',');

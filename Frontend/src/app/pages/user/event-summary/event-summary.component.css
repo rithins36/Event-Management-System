@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+/* *, body {
+   
+} */
+
+.white-text{
+    color: white;
+}
+.form-body {
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.form-holder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+}
+
+.form-holder .form-content {
+    position: relative;
+    text-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 60px;
+    padding-top: 30px;
+}
+
+.form-content .form-items {
+    padding: 40px;
+    display: inline-block;
+    width: 100%;
+    min-width: 600px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    text-align: left;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border: 2px solid #d1e8e2;
+    border-radius: 12px; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    color: #af9453;
+}
+
+.form-content h3 {
+    text-align: left;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form-content h3.form-title {
+    margin-bottom: 30px;
+}
+
+.form-content p {
+    text-align: left;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+
+.form-content label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+    color: black;
+}
+
+.form-content input[type=text], .form-content input[type=password], .form-content input[type=email], .form-content select {
+    width: 100%;
+    padding: 9px 20px;
+    text-align: left;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    color: #8D8D8D;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+    border: 2px solid #b69d63;
+
+
+}
+
+
+.btn-primary{
+    background-color: #af9453;
+    outline: none;
+    border: 0px;
+     box-shadow: none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+    background-color: #495056;
+    outline: none !important;
+    border: none !important;
+     box-shadow: none;
+}
+
+.form-content textarea {
+    position: static !important;
+    width: 100%;
+    padding: 8px 20px;
+    border-radius: 6px;
+    text-align: left;
+    background-color: #fff;
+    border: 0;
+    font-size: 15px;
+    font-weight: 300;
+    color: #8D8D8D;
+    outline: none;
+    resize: none;
+    height: 120px;
+    -webkit-transition: none;
+    transition: none;
+    margin-bottom: 14px;
+}
+
+.form-content textarea:hover, .form-content textarea:focus {
+    border: 0;
+    background-color: #ebeff8;
+    color: #8D8D8D;
+}
+
+.mv-up{
+    margin-top: -9px !important;
+    margin-bottom: 8px !important;
+}
+
+.invalid-feedback{
+    color: #ff606e;
+}
+
+.valid-feedback{
+   color: #2acc80;
+}
+
+.align{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.input-border{
+    border: 2px solid #b69d63 !important;
+
+}
+
+.summary-item {
+    margin-bottom: 2px;
+  }
+  
+  .summary-item h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #af9453;
+  }
+  
+  .summary-item p, 
+  .summary-item ul li {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6c757d;
+  }
+  
+  .summary-item ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .summary-item ul li {
+    margin-bottom: 5px;
+  }
+  
+  .btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #af9453;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  /* .btn-primary:hover {
+    background-color: #495056;
+  } */
+  

@@ -8,6 +8,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { EventRequestsComponent } from './pages/admin/event-requests/event-requests.component';
 import { EventCalendarComponent } from './pages/admin/event-calendar/event-calendar.component';
 import { AuthGuard } from './components/auth.guard';
+import { ProfileComponent } from './components/profile/profile.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/app-login', pathMatch: 'full' },
@@ -42,5 +43,9 @@ export const routes: Routes = [
     path: 'vendor-dashboard', 
     component: DashboardComponent, 
     canActivate: [AuthGuard] // Protected by AuthGuard
+  },
+  { 
+    path: 'app-profile', 
+    component: ProfileComponent, 
   },
 ];

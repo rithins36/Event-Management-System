@@ -2,23 +2,34 @@
 
   <app-sidebar></app-sidebar>
 
-  <div class="form-body">
-    <div class="row">
-        <div class="form-holder">
-            <div class="form-content">
-                <div class="form-items">
-                    <h3>Event Registraion</h3>
-                    <p>Fill in the data below.</p>               
-                    <div class="align">
-                      <label>Event Title: <input type="text" [(ngModel)]="event.name"></label><br>
-                      <label>Date: <input type="date" [(ngModel)]="event.date"></label><br>
-                      <label>Type: <input type="text" [(ngModel)]="event.type"></label><br>
-                      <!-- <label>Venue: <input type="text" [(ngModel)]="event.venue"></label><br> -->
-                      <button (click)="next()" [disabled]="!event.name || !event.date || !event.type">Next</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="content-container">
+    <div class="form-body">
+      <div class="row">
+          <div class="form-holder">
+              <div class="form-content">
+                  <div class="form-items">
+                      <h3>Event Registraion</h3>
+                      <p>Fill in the data below.</p>               
+                      <div class="align">
+                        <label>Event Title: <input type="text" [(ngModel)]="event.name" value="event.name"></label><br>
+                        <label>Date: <input type="date" [(ngModel)]="event.date"  class= "input-border"></label><br>
+
+                        <label for="eventType">Type:</label>
+                        <select id="eventType" [(ngModel)]="event.type">
+                          <option value="" disabled selected>Select an event type</option>
+                          <option value="Wedding">Wedding</option>
+                          <option value="Birthday">Birthday</option>
+                          <option value="Corporate">Corporate</option>
+                          <option value="Anniversary">Anniversary</option>
+                        </select>          
+                        <br>
+                        <!-- <label>Venue: <input type="text" [(ngModel)]="event.venue"></label><br> -->
+                        <button (click)="next()" >Next</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>  
   </div>
 </div>
