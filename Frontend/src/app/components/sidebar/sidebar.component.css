@@ -1,0 +1,46 @@
+.sidebar{
+  padding: 20px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.sidebar ul{
+  list-style: none; /* Remove markers */
+  padding: 0;       /* Remove default padding */
+  margin: 0;
+}
+
+.sidebar-links li {
+  margin: 10px 0;
+}
+
+.sidebar-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-links a i {
+  margin-right: 10px;
+}
+
+.sidebar-links a:hover {
+  color: #af9453;
+  background-color: #f9f9f9; /* Light background on hover */
+}
+
+.sidebar-links li.active a {
+  background-color: #f0e6d4; /* Light background for active items */
+  color: #af9453; /* Match the hover color */
+  font-weight: bold; /* Optional for emphasis */
+}
+.logout-link{
+  cursor: pointer;
+}

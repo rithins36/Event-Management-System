@@ -1,37 +1,67 @@
+<div class="sidebar-container">
 
-<div class="form-body">
-  <div class="row">
-      <div class="form-holder">
-          <div class="form-content">
+  <app-sidebar></app-sidebar>
 
-            <div class="form-items">
-              <h2>Select Venue</h2>
-              <div class="venue-container">
-                <div 
-                  *ngFor="let venue of venues" 
-                  (click)="selectVenue(venue)" 
-                  [class.selected]="selectedVenue === venue" 
-                  style="border: 1px white solid; cursor: pointer;"
-                >
-                  <div class="venue-list">
-                    <span>{{venue.VenueName}}</span> 
-                    <span>{{venue.Address}}</span>
-                    <span>{{venue.Capacity}}</span>
-                    <span>{{venue.Rent}}</span>
+  <div class="content-container">
+    <div class="form-body">
+      <div class="row">
+          <div class="form-holder">
+              <div class="form-content">
+
+                <div class="form-items" id="layout">
+                  <div class="button-container">
+                    <!-- <button (click)="previous()">Previous</button> -->
+                    <button (click)="next()" style="width: 80px;">Next</button>
                   </div>
-                </div>
-              </div>
+  
+                  <div style="display: flex;">
+                    <div class="left">
+                      <h2>Select Venue</h2>
+                      <div class="venue-container">
+                          <div 
+                              class="venue-card" 
+                              *ngFor="let venue of venues" 
+                              (click)="selectVenue(venue)" 
+                              [class.selected]="selectedVenue === venue"
+                          >
+                              <div class="venue-details">
+                                  <span><strong>Venue Name:</strong> {{venue.VenueName}}</span>
+                                  <span><strong>Address:</strong> {{venue.Address}}</span>
+                                  <span><strong>Capacity:</strong> {{venue.Capacity}}</span>
+                                  <span><strong>Rent:</strong> Rs{{venue.Rent}}</span>
+                              </div>
                           </div>
-
-              <div class="form-items">
-                <h2>Select Vendors</h2>
-                <div *ngFor="let vendor of vendors">
-                  <input type="checkbox" [(ngModel)]="vendor.selected"> {{vendor.name}} - ${{vendor.cost}}
-                </div>
+                      </div>
+                  </div>
+                  
+                    <div class="left">
+                      <h2>Select Vendors</h2>
+                      <div class="vendor-container">
+                          <div 
+                              class="card" 
+                              *ngFor="let vendor of vendors" 
+                              (click)="toggleVendorSelection(vendor)" 
+                              [class.selected]="vendor.selected"
+                          >
+                              <div class="card-body">
+                                  <h5 class="card-title">{{vendor.name}}</h5>
+                                  <p class="card-text">
+                                    <strong>Type:</strong> {{vendor.serviceType}}
+                                </p>
+                                  <p class="card-text">
+                                      <strong>Cost:</strong> Rs{{vendor.cost}}
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+  
+                  </div>
+                
               </div>
-              <button (click)="next()">Next</button>
 
           </div>
       </div>
+    </div>
   </div>
 </div>

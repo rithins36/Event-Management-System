@@ -1,0 +1,26 @@
+.sidebar-container{
+    display: flex;
+    height: 100vh;
+}
+
+.content-container {
+    padding: 20px;
+    flex-grow: 1; /* Ensures it takes the remaining space */
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Makes the content scrollable if it's too long */
+    background-color: #ede1ca;
+
+  }
+
+button{
+  background-color: #af9453;
+  color: white;
+  padding: 10px;
+}
+
+.custom-dialog .mdc-dialog--open .mat-mdc-dialog-surface {
+  padding: 20px;  /* Adjust the padding value here */
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  }

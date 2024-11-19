@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { VendorService } from './vendor.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { SidebarComponent } from '../../../components/sidebar/sidebar.component';
 
 @Component({
   selector: 'vendor-dashboard',
@@ -9,6 +10,7 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     FormsModule,
+    SidebarComponent
   ],
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
@@ -28,14 +30,19 @@ export class DashboardComponent {
   constructor(private vendorService: VendorService) { }
 
   onSubmit() {
-    this.vendorService.addVendor(this.vendor).subscribe(
-      response => {
-        console.log('Vendor added successfully:', response);
-        this.registrationSuccess = true; // Set success state
-      },
-      error => {
-        console.error('Error adding vendor:', error);
-      }
-    );
+    if (this.vendor.name && this.vendor.email && this.vendor.contactInfo && this.vendor.serviceType && this.vendor.cost ) {
+      this.vendorService.addVendor(this.vendor).subscribe(
+        response => {
+          console.log('Vendor added successfully:', response);
+          this.registrationSuccess = true; // Set success state
+        },
+        error => {
+          console.error('Error adding vendor:', error);
+        }
+      );
+    } else {
+      alert("Please fill in all fields before proceeding.");
+    }
+    
   }
 }

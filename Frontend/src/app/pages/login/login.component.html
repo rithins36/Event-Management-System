@@ -34,6 +34,11 @@
                       </div>
                       <div class="form-container sign-in-container" *ngIf="!isSignUpActive">
                         <form (ngSubmit)="onSignIn(signInForm)" #signInForm="ngForm">
+                          <div class="icon" (click)="navigateToMain()">
+                            <i class="fa fa-arrow-circle-left" style="font-size:48px;color:#af9453"></i>
+
+                          </div>
+
                           <h1>Sign In</h1>
                          
                           <input type="email" name="email" placeholder="Email" ngModel required />
@@ -52,12 +57,12 @@
                               <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
-                    <h1>Welcome Back!</h1>
+                    <h1 class="white-text">Welcome Back!</h1>
                     <p>To keep connected with us please login with your personal info</p>
                     <button class="ghost" (click)="switchToSignIn()">Sign In</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <h1>Hello, Friend!</h1>
+                    <h1 class="white-text">Hello, Friend!</h1>
                     <p>Enter your personal details and start journey with us</p>
                     <button class="ghost" (click)="switchToSignUp()">Sign Up</button>
                 </div>
