@@ -1,17 +1,64 @@
-<div>
-  <h2>Event Summary</h2>
-  <p>Name: {{ eventDetails.name }}</p>
-  <p>Date: {{ eventDetails.date }}</p>
-  <p>Type: {{ eventDetails.type }}</p>
+<div class="sidebar-container">
+  <app-sidebar></app-sidebar>
 
-  <h3>Venue</h3>
-  <p>{{ selectedVenue.VenueName }} - ${{ selectedVenue.Rent }}</p>
+  <div class="content-container">
+    <div class="form-body">
+      <div class="row">
+        <div class="form-holder">
+          <div class="form-content">
+            <!-- Event Summary -->
+            <div *ngIf="!paymentSuccess">
+              <div class="form-items">
+                <h3>Event Summary</h3>
+                <p>Below are the details of your event.</p>
 
-  <h3>Selected Vendors</h3>
-  <ul>
-    <li *ngFor="let vendor of selectedVendors">{{vendor.name}} - ${{vendor.cost}}</li>
-  </ul>
+                <div class="align">
+                  <div class="summary-item">
+                    <h4>Event Details</h4>
+                    <p><strong>Name:</strong> {{ eventDetails.name }}</p>
+                    <p><strong>Date:</strong> {{ eventDetails.date }}</p>
+                    <p><strong>Type:</strong> {{ eventDetails.type }}</p>
+                  </div>
 
-  <h3>Total Budget: Rs {{ totalCost }}</h3>
-  <button (click)="makePayment()">Proceed to Payment</button>
+                  <div class="summary-item">
+                    <h4>Venue</h4>
+                    <p><strong>{{ selectedVenue.VenueName }}</strong> - Rs {{ selectedVenue.Rent }}</p>
+                  </div>
+
+                  <div class="summary-item">
+                    <h4>Selected Vendors</h4>
+                    <ul>
+                      <li *ngFor="let vendor of selectedVendors">
+                        <strong>{{ vendor.name }}</strong> - Rs {{ vendor.cost }}
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="summary-item">
+                    <h4>Total Budget</h4>
+                    <p><strong>Rs {{ totalCost }}</strong></p>
+                  </div>
+
+                  <div class="align">
+                    <button class="btn-primary" (click)="makePayment()">Proceed to Payment</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Payment Success Message -->
+            <div *ngIf="paymentSuccess">
+              <div class="form-items">
+                <h3>Payment Successful</h3>
+                <p>Your payment was successful and the event request is now under progress.</p>
+                <!-- <div class="align">
+                  <button class="btn-primary" (click)="goBackToSummary()">Go Back to Event Summary</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

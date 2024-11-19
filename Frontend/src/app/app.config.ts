@@ -5,12 +5,13 @@ import { provideHttpClient } from '@angular/common/http';
 import { CalendarModule, CalendarUtils } from 'angular-calendar';
 import { DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
-    provideHttpClient(),
+    provideHttpClient(), provideAnimationsAsync(),
     // {
     //   provide: CalendarUtils,
     //   useFactory: (dateAdapter: DateAdapter) => new CalendarUtils(dateAdapter) 

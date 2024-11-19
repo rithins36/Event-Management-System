@@ -1,22 +1,29 @@
-<div class="admin-container">
+<div class="sidebar-container">
+  <app-sidebar></app-sidebar>
+  <div class="admin-container content-container">
     <h2>Event Approval Dashboard</h2>
-  
+
     <div *ngIf="isLoading" class="loading">
       Loading events...
     </div>
-  
+
     <div *ngIf="!isLoading && events.length === 0" class="no-events">
       No events to review at the moment.
     </div>
-  
+
     <div *ngIf="!isLoading && events.length > 0" class="event-list">
       <div class="event-item" *ngFor="let event of events">
         <div class="event-details">
           <h3>{{ event.name }}</h3>
           <p><strong>Date:</strong> {{ event.date | date }}</p>
           <p><strong>Type:</strong> {{ event.type }}</p>
-          <p><strong>Venue:</strong> {{ event.venueId }}</p>
-          <p><strong>Requested by User:</strong> {{ event.userId }}</p>
+          <p><strong>Venue:</strong> {{ event.venueName }}</p>
+          <p><strong>Vendors:</strong> 
+            <span *ngIf="event.vendorNames.length > 0; else noVendors">
+              {{ event.vendorNames.join(', ') }}
+            </span>
+            <ng-template #noVendors>No vendors assigned.</ng-template>
+          </p>
         </div>
         <div class="actions">
           <button (click)="updateStatus(event.id, true)" class="approve-btn">Approve</button>
@@ -25,4 +32,4 @@
       </div>
     </div>
   </div>
-  
+</div>

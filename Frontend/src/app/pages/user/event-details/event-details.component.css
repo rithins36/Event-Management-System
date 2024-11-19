@@ -9,7 +9,6 @@
 }
 .form-body {
     height: 100%;
-    background-color: #152733;
     overflow: hidden;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -22,7 +21,6 @@
 .form-holder {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
       text-align: center;
       min-height: 100vh;
@@ -44,21 +42,24 @@
 }
 
 .form-content .form-items {
-    border: 3px solid #fff;
     padding: 40px;
     display: inline-block;
     width: 100%;
-    min-width: 540px;
+    min-width: 600px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    border-radius: 10px;
     text-align: left;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
+    border: 2px solid #d1e8e2;
+    border-radius: 12px; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    color: #af9453;
+    font-size: 1.1rem;
 }
 
 .form-content h3 {
-    color: #fff;
     text-align: left;
     font-size: 28px;
     font-weight: 600;
@@ -70,17 +71,16 @@
 }
 
 .form-content p {
-    color: #fff;
     text-align: left;
-    font-size: 17px;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 400;
     line-height: 20px;
     margin-bottom: 30px;
 }
 
 
 .form-content label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
-    color: #fff;
+    color: black;
 }
 
 .form-content input[type=text], .form-content input[type=password], .form-content input[type=email], .form-content select {
@@ -97,6 +97,9 @@
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     margin-top: 16px;
+    border: 2px solid #b69d63;
+
+
 }
 
 
@@ -156,4 +159,8 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+.input-border{
+    border: 2px solid #b69d63 !important;
+
 }

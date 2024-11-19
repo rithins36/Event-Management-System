@@ -13,14 +13,16 @@ h1 {
 	font-weight: bold;
 	margin: 0;
 	top: 10px;
-    font-size: 1.6875rem;}
+    font-size: 36px;
+/* color: whitesmoke; */
+}
 
 h2 {
 	text-align: center;
 }
 
 p {
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: 100;
 	line-height: 20px;
 	letter-spacing: 0.5px;
@@ -28,20 +30,20 @@ p {
 }
 
 span {
-	font-size: 12px;
+	font-size: 14px;
 }
 
 a {
 	color: #333;
-	font-size: 14px;
+	font-size: 16px;
 	text-decoration: none;
 	margin: 15px 0;
 }
 
 button {
 	border-radius: 20px;
-	border: 1px solid #FCBB3C;
-	background-color: #FCBB3C;
+	/* border: 1px solid #FCBB3C; */
+    background-color: #af9453;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -161,9 +163,9 @@ input {
 }
 
 .overlay {
-	background: #ffc53f;
-	background: -webkit-linear-gradient(to right, #FCBB3C, #eb8a4e);
-	background: linear-gradient(to right, #FCBB3C,#eb8a4e);
+	background: #af9453;
+	background: linear-gradient(to right, #8c753f, #d4ba7b);
+	/* background: linear-gradient(to right, #FCBB3C,#eb8a4e); */
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -176,6 +178,9 @@ input {
 	transition: transform 0.6s ease-in-out;
 }
 
+.white-text{
+	color: bisque;
+}
 .container.right-panel-active .overlay {
   	transform: translateX(50%);
 }
@@ -250,4 +255,16 @@ footer i {
 footer a {
     color: #3c97bf;
     text-decoration: none;
+}
+
+.icon{
+	width: 100%;
+	display: flex;
+	justify-content: start;
+}
+
+.d-flex{
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
 }

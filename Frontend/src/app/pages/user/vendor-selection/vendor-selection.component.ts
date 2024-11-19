@@ -5,11 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { VendorService } from '../../vendor/dashboard/vendor.service';
 import { Venue } from '../../../models/venue.model';
+import { SidebarComponent } from '../../../components/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-vendor-selection',
   standalone: true,
-  imports: [FormsModule,CommonModule],
+  imports: [FormsModule,CommonModule,SidebarComponent],
   templateUrl: './vendor-selection.component.html',
   styleUrl: './vendor-selection.component.css'
 })
@@ -27,6 +28,9 @@ export class VendorSelectionComponent implements OnInit {
 
   selectedVenue: Venue | null = null;
 
+  toggleVendorSelection(vendor: any): void {
+    vendor.selected = !vendor.selected;
+  }
   selectVenue(venue: any) {
     this.selectedVenue = venue;
   }
@@ -42,6 +46,10 @@ export class VendorSelectionComponent implements OnInit {
     this.vendorService.fetchVendors().subscribe((data) => {
       this.vendors = data;
     });
+  }
+
+  previous(){
+    this.router.navigate(['/event-details']);
   }
 
   next() {
