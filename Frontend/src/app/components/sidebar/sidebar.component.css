@@ -10,6 +10,7 @@
   list-style: none; /* Remove markers */
   padding: 0;       /* Remove default padding */
   margin: 0;
+  font-size: 1.2rem;
 }
 
 .sidebar-links li {

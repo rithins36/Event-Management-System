@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import * as emailjs from 'emailjs-com';
 import { SidebarComponent } from '../../../components/sidebar/sidebar.component';
 
 @Component({
@@ -14,6 +15,15 @@ import { SidebarComponent } from '../../../components/sidebar/sidebar.component'
 export class EventRequestsComponent implements OnInit {
   events: any[] = [];
   isLoading: boolean = true;
+
+  //MailAPI
+  email: string = 'rithinsamuel11@gmail.com';
+  message: string = 'You are invited to the event.';
+  successMessage: string = '';
+  errorMessage: string = '';
+  serviceID = 'service_6tpwnns';
+  templateID = 'template_ssrwtyg';
+  userID = '8fji1fGwT_k77d-yv'; 
 
   venues = [
     { VenueId: 1, VenueName: 'Grand Hall', Address: '123 Main St', Capacity: 200, Rent: 5000 },
@@ -78,6 +88,28 @@ export class EventRequestsComponent implements OnInit {
   updateStatus(eventId: string, approve: boolean): void {
     const apiUrl = `https://localhost:7262/api/Event/changestatus/${eventId}`;
     const updatedStatus = { status: approve };
+
+    //Mail sending
+    if(approve){
+      const templateParams = {
+        to_mail: 'rithinsamuel11@gmail.com',
+        message: 'You are invited to the event.'
+      };
+  
+      emailjs.send(this.serviceID, this.templateID, templateParams, this.userID)
+        .then((response) => {
+          console.log('SUCCESS!', response);
+          this.successMessage = 'Email sent successfully!';
+          this.errorMessage = '';
+        })
+        .catch((error) => {
+          console.error('FAILED...', error);
+          this.errorMessage = 'Failed to send email. Please try again later.';
+          this.successMessage = '';
+        });  
+    }
+
+    //Updating Status
     this.http.put(apiUrl, updatedStatus).subscribe({
       next: () => {
         this.events = this.events.filter(event => event.id !== eventId);

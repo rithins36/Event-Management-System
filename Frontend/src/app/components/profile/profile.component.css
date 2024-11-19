@@ -21,7 +21,8 @@
   .form-content {
     text-align: center;
     border: 2px solid #af9453;
-    padding: 20px 60px;
+    padding: 20px 40px;
+    font-size: 1.4rem;
   }
   
   .form-items {

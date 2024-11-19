@@ -12,7 +12,7 @@ html {
 .header-lite-menu {
     display: flex;
     justify-content: flex-start; /* Align items to the right */
-    padding: 10px;
+    padding-left: 20px;
     background-image: linear-gradient( rgba(244, 243, 234, 1), rgba(244, 243, 234, 1)); /* Light background */
   }
   
