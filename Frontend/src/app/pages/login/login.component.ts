@@ -38,6 +38,12 @@ export class LoginComponent {
 
 
   onSignUp(form: any) {
+
+    if (!form.value.email || !form.value.password || !form.value.name || !form.value.phone || !form.value.role) {
+      alert('Please fill in all fields before submitting.');
+      return;
+    }
+    
     const data = {
       email: form.value.email,
       password: form.value.password,
