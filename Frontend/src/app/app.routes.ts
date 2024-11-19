@@ -9,6 +9,7 @@ import { EventRequestsComponent } from './pages/admin/event-requests/event-reque
 import { EventCalendarComponent } from './pages/admin/event-calendar/event-calendar.component';
 import { AuthGuard } from './components/auth.guard';
 import { GalleryComponent } from './pages/gallery/gallery.component';
+import { SendMailComponent } from './pages/send-mail/send-mail.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/app-main', pathMatch: 'full' },
@@ -18,6 +19,11 @@ export const routes: Routes = [
     path: 'app-event-calendar', 
     component: EventCalendarComponent, 
     canActivate: [AuthGuard] // Protected by AuthGuard
+  },
+  { 
+    path: 'email', 
+    component: SendMailComponent, 
+    // canActivate: [AuthGuard] // Protected by AuthGuard
   },
   { 
     path: 'app-event-requests', 

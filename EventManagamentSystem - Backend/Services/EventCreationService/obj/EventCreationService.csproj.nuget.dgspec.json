@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\EventCreationService.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\EventCreationService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\EventCreationService.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\EventCreationService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\EventCreationService.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\EventCreationService.csproj",
         "projectName": "EventCreationService",
-        "projectPath": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\EventCreationService.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\EventCreationService.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Documents\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\Event-Management-System\\EventManagamentSystem - Backend\\Services\\EventCreationService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

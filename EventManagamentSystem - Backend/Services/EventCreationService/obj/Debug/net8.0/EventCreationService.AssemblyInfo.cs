@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EventCreationService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1781d0ce0032c4995c8f6e5529c62c031d80f498")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef492f803136426afdd46ed791ab7f2ea51ea52a")]
 [assembly: System.Reflection.AssemblyProductAttribute("EventCreationService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EventCreationService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
