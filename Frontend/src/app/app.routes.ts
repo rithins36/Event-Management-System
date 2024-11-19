@@ -8,9 +8,10 @@ import { LoginComponent } from './pages/login/login.component';
 import { EventRequestsComponent } from './pages/admin/event-requests/event-requests.component';
 import { EventCalendarComponent } from './pages/admin/event-calendar/event-calendar.component';
 import { AuthGuard } from './components/auth.guard';
+import { GalleryComponent } from './pages/gallery/gallery.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: '/app-login', pathMatch: 'full' },
+  { path: '', redirectTo: '/app-main', pathMatch: 'full' },
   { path: 'app-main', component: MainComponent },
   { path: 'app-login', component: LoginComponent },
   { 
@@ -42,5 +43,10 @@ export const routes: Routes = [
     path: 'vendor-dashboard', 
     component: DashboardComponent, 
     canActivate: [AuthGuard] // Protected by AuthGuard
+  },
+  { 
+    path: 'app-gallery', 
+    component: GalleryComponent, 
+    //canActivate: [AuthGuard] // Protected by AuthGuard
   },
 ];
