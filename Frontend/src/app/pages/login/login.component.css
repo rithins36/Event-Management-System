@@ -256,3 +256,9 @@ footer a {
     color: #3c97bf;
     text-decoration: none;
 }
+
+.icon{
+	width: 100%;
+	display: flex;
+	justify-content: start;
+}

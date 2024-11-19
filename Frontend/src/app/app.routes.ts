@@ -9,9 +9,10 @@ import { EventRequestsComponent } from './pages/admin/event-requests/event-reque
 import { EventCalendarComponent } from './pages/admin/event-calendar/event-calendar.component';
 import { AuthGuard } from './components/auth.guard';
 import { ProfileComponent } from './components/profile/profile.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: '/app-login', pathMatch: 'full' },
+  { path: '', redirectTo: '/app-main', pathMatch: 'full' },
   { path: 'app-main', component: MainComponent },
   { path: 'app-login', component: LoginComponent },
   { 
@@ -48,4 +49,8 @@ export const routes: Routes = [
     path: 'app-profile', 
     component: ProfileComponent, 
   },
+  {
+    path: 'app-gallery',
+    component: GalleryComponent,
+  }
 ];

@@ -24,6 +24,10 @@ export class LoginComponent {
   isSignUpActive: boolean = false;
   constructor(private http: HttpClient, private router: Router) {}
 
+  navigateToMain(): void {
+    this.router.navigate(['/app-main']);
+  } 
+  
   switchToSignUp() {
     this.isSignUpActive = true;
   }

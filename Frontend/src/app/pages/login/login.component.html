@@ -34,6 +34,11 @@
                       </div>
                       <div class="form-container sign-in-container" *ngIf="!isSignUpActive">
                         <form (ngSubmit)="onSignIn(signInForm)" #signInForm="ngForm">
+                          <div class="icon" (click)="navigateToMain()">
+                            <i class="fa fa-arrow-circle-left" style="font-size:48px;color:#af9453"></i>
+
+                          </div>
+
                           <h1>Sign In</h1>
                          
                           <input type="email" name="email" placeholder="Email" ngModel required />
