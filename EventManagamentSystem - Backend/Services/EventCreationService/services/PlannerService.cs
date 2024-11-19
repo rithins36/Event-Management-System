@@ -45,7 +45,7 @@ namespace EventCreationService.services
             Planner p = new Planner()
             {  Id = plannerdto.Id,
                 Name = plannerdto.Name,
-                Date = DateTime.Now,
+                Date = plannerdto.Date,
                 VendorIds = plannerdto.VendorIds,
                 VenueId = plannerdto.VenueId,
                 Type = plannerdto.Type,

@@ -23,6 +23,8 @@ export class EventSummaryComponent implements OnInit {
     this.eventDetails = this.eventService.getEventDetails();
     this.selectedVendors = this.eventService.getVendors();
     this.selectedVenue = this.eventService.getVenue();
+
+    console.log(this.eventDetails);
     
     // Calculate total cost including vendors and venue rent
     const vendorsTotal = this.selectedVendors.reduce((sum, vendor) => sum + vendor.cost, 0);
@@ -43,6 +45,7 @@ export class EventSummaryComponent implements OnInit {
       // totalCost: this.totalCost,
     };
     console.log(eventPayload);
+
 
     this.eventService.postEvent(eventPayload).subscribe(
       (response) => {

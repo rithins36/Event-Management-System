@@ -13,7 +13,7 @@ h1 {
 	font-weight: bold;
 	margin: 0;
 	top: 10px;
-    font-size: 1.6875rem;
+    font-size: 36px;
 /* color: whitesmoke; */
 }
 
@@ -22,7 +22,7 @@ h2 {
 }
 
 p {
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: 100;
 	line-height: 20px;
 	letter-spacing: 0.5px;
@@ -30,12 +30,12 @@ p {
 }
 
 span {
-	font-size: 12px;
+	font-size: 14px;
 }
 
 a {
 	color: #333;
-	font-size: 14px;
+	font-size: 16px;
 	text-decoration: none;
 	margin: 15px 0;
 }
@@ -261,4 +261,10 @@ footer a {
 	width: 100%;
 	display: flex;
 	justify-content: start;
+}
+
+.d-flex{
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
 }

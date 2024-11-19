@@ -24,6 +24,7 @@ export class EventDetailsComponent {
   next() {
     if (this.event.name && this.event.date && this.event.type ) {
       this.eventService.setEventDetails(this.event);
+      console.log(this.event.date);
       this.router.navigate(['/vendor-selection']);
     } else {
       alert("Please fill in all fields before proceeding.");
