@@ -1,23 +1,22 @@
-<div class="outer-container">
+<div class="outer-container" >
     <div class="container" [ngClass]="{'right-panel-active': isSignUpActive}" id="container">
         <div class="form-container sign-up-container">
-            <form (ngSubmit)="onSignUp(signUpForm)" #signUpForm="ngForm">
+            <form (ngSubmit)="onSignUp(signUpForm)" #signUpForm="ngForm" style="	margin-top: 10px;">
                 <h1>Create Account</h1>
                 
-                <span>or use your email for registration</span>
                 <input type="text" placeholder="Name" name="name" ngModel required />
                 <input type="tel" placeholder="Mobile Number" name="phone" ngModel required />
                 <input type="email" placeholder="Email" name="email" ngModel required />
                 <input type="password" placeholder="Password" name="password" ngModel required />
               
-                <div>
-                  <label for="admin">
+                <div class="d-flex" style="margin-block: 8px;">
+                  <label class="d-flex" for="admin">
                     <input type="radio" id="admin" name="role" value="Admin" ngModel /> Admin
                   </label>
-                  <label for="vendor">
+                  <label class="d-flex" for="vendor">
                     <input type="radio" id="vendor" name="role" value="Vendor" ngModel /> Vendor
                   </label>
-                  <label for="host">
+                  <label class="d-flex" for="host">
                     <input type="radio" id="host" name="role" value="Host" ngModel /> Host
                   </label>
                 </div>
@@ -35,7 +34,7 @@
                       <div class="form-container sign-in-container" *ngIf="!isSignUpActive">
                         <form (ngSubmit)="onSignIn(signInForm)" #signInForm="ngForm">
                           <div class="icon" (click)="navigateToMain()">
-                            <i class="fa fa-arrow-circle-left" style="font-size:48px;color:#af9453"></i>
+                            <i class="fa fa-arrow-circle-left" style="font-size:36px;color:#af9453"></i>
 
                           </div>
 
@@ -44,7 +43,6 @@
                           <input type="email" name="email" placeholder="Email" ngModel required />
                           <input type="password" name="password" placeholder="Password" ngModel required />
                           <a href="#">Forgot your password?</a>
-                          <span>or use the below </span>
 
                           <div class="social-container">
                             <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
