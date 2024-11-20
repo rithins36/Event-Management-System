@@ -56,5 +56,6 @@ export class EventSummaryComponent implements OnInit {
         alert('Failed to create event. Please try again.');
       }
     );
+    
   }
 }

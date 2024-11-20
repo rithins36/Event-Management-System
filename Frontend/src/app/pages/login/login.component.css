@@ -267,4 +267,10 @@ footer a {
 	display: flex;
 	flex-direction: row;
 	gap: 15px;
+	/* background: #ae9456; */
+    color: black;
+    padding: 5px;
+    border-radius: 50px;
+	border: 1px solid #dddde4;
+    border-radius: 50px;
 }

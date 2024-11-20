@@ -9,14 +9,14 @@
                 <input type="email" placeholder="Email" name="email" ngModel required />
                 <input type="password" placeholder="Password" name="password" ngModel required />
               
-                <div class="d-flex" style="margin-block: 8px;">
-                  <label class="d-flex" for="admin">
+                <div class="d-flex" style="margin-block: 8px; font-size: 20px">
+                  <label for="admin" style="display:flex; gap:5px; align-items: center;">
                     <input type="radio" id="admin" name="role" value="Admin" ngModel /> Admin
                   </label>
-                  <label class="d-flex" for="vendor">
+                  <label  for="vendor" style="display:flex; gap:5px; align-items: center;">
                     <input type="radio" id="vendor" name="role" value="Vendor" ngModel /> Vendor
                   </label>
-                  <label class="d-flex" for="host">
+                  <label  for="host" style="display:flex; gap:5px; align-items: center;">
                     <input type="radio" id="host" name="role" value="Host" ngModel /> Host
                   </label>
                 </div>

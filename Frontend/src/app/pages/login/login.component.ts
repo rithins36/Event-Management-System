@@ -59,7 +59,7 @@ export class LoginComponent {
       (response) => {
         if (response.issuccess) {
           console.log('Registration successful:', response.message);
-          alert('Registration successful: ' + response.message);
+          alert( response.message);
           this.switchToSignIn();
         } else {
           console.error('Registration failed:', response.message);
